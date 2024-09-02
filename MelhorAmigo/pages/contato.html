@@ -10,15 +10,15 @@
     <!-- Header -->
     <header class="bg-green-600">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a href="/MelhorAmigo/pages/index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
                 <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" class="w-10 h-10">
                 <span class="ml-3 text-xl">Petshop</span>
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a href="/MelhorAmigo/pages/index.html" class="mr-5 text-white hover:text-gray-300">Home</a>
-                <a href="/MelhorAmigo/pages/produtos.html" class="mr-5 text-white hover:text-gray-300">Produtos</a>
-                <a href="/MelhorAmigo/pages/galeria.html" class="mr-5 text-white hover:text-gray-300">Galeria</a>
-                <a href="/MelhorAmigo/pages/contato.html" class="mr-5 text-white hover:text-gray-300">Contato</a>
+                <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="mr-5 text-white hover:text-gray-300">Home</a>
+                <a href="/projeto-petshop/MelhorAmigo/pages/produtos.html" class="mr-5 text-white hover:text-gray-300">Produtos</a>
+                <a href="/projeto-petshop/MelhorAmigo/pages/galeria.html" class="mr-5 text-white hover:text-gray-300">Galeria</a>
+                <a href="/projeto-petshop/MelhorAmigo/pages/contato.html" class="mr-5 text-white hover:text-gray-300">Contato</a>
             </nav>
                 <button class="inline-flex items-center bg-white text-green-600 border-0 py-2 px-4 focus:outline-none hover:bg-gray-100 rounded text-base mt-4 md:mt-0">
                     Agende um Horário
@@ -27,12 +27,56 @@
     </header>
     <!-- Contact Section -->
      <section class="text-green-600 body-font relative">
-        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-            <!-- Mapa de  Localização -->
-             <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex  items-end justify-start relative">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <!-- Formulário de Contato -->
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Entre em Contato</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">Preencha o formulário abaixo para entrar em contato conosco.</p>
+                <div class="flex flex-wrap -m-2">
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm text-gray-600">Nome</label>
+                            <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="message" class="leading-7 text-sm text-gray-600">Mensagem</label>
+                            <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <button class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- Mapa de  Localização -->
 
-                <iframe></iframe>
-             </div>
+     <section class="text-green-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-6">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Nossa Localização</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Encontre-nos no mapa abaixo e venha nos visitar!</p>
+            </div>
+        </div>
+        <div class="flex sm:flex-nowrap flex-wrap justify-center mt-4 mb-10">
+             <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex  items-end justify-start relative border-4 border-green-500">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=pt&q=Petshop%20Location&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                    <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ENDEREÇO</h2>
+                        <p class="mt-1">Rua Exemplo, 123, Bairro, Cidade, Estado</p>
+                    </div>
+                </div> 
+            </div>
         </div>
      </section> 
     <!-- Footer -->
