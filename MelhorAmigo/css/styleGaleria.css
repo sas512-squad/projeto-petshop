@@ -1,0 +1,14 @@
+.bg-custom-green {
+    background-color: #16a34a;
+}
+.text-custom-green {
+    color: #16a34a;
+}
+.btn-outline-custom-green {
+    color: #16a34a;
+    border-color: #16a34a;
+}
+.btn-outline-custom-green:hover {
+    color: #fff;
+    background-color: #16a34a;
+}

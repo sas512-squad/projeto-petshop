@@ -4,109 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - PeTshop</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/styleContato.css">
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-light">
     <!-- Header -->
-    <header class="bg-green-600">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" class="w-10 h-10">
-                <span class="ml-3 text-xl">Petshop</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="mr-5 text-white hover:text-gray-300">Home</a>
-                <a href="/projeto-petshop/MelhorAmigo/pages/produtos.html" class="mr-5 text-white hover:text-gray-300">Produtos</a>
-                <a href="/projeto-petshop/MelhorAmigo/pages/galeria.html" class="mr-5 text-white hover:text-gray-300">Galeria</a>
-                <a href="/projeto-petshop/MelhorAmigo/pages/contato.html" class="mr-5 text-white hover:text-gray-300">Contato</a>
-            </nav>
-                <button class="inline-flex items-center bg-white text-green-600 border-0 py-2 px-4 focus:outline-none hover:bg-gray-100 rounded text-base mt-4 md:mt-0">
-                    Agende um Horário
-                </button>
+    <header class="bg-custom-green">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="text-white text-decoration-none d-flex align-items-center">
+                        <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" width="40" height="40">
+                        <span class="ms-3 fs-4">Petshop</span>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <nav class="d-flex justify-content-center">
+                        <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="text-white text-decoration-none me-3">Home</a>
+                        <a href="/projeto-petshop/MelhorAmigo/pages/produtos.html" class="text-white text-decoration-none me-3">Produtos</a>
+                        <a href="/projeto-petshop/MelhorAmigo/pages/galeria.html" class="text-white text-decoration-none me-3">Galeria</a>
+                        <a href="/projeto-petshop/MelhorAmigo/pages/contato.html" class="text-white text-decoration-none">Contato</a>
+                    </nav>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-light text-custom-green">Agende um Horário</button>
+                </div>
+            </div>
         </div>
     </header>
+
     <!-- Contact Section -->
-     <section class="text-green-600 body-font relative">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-            <!-- Formulário de Contato -->
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
-                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Entre em Contato</h2>
-                <p class="leading-relaxed mb-5 text-gray-600">Preencha o formulário abaixo para entrar em contato conosco.</p>
-                <div class="flex flex-wrap -m-2">
-                    <div class="p-2 w-1/2">
-                        <div class="relative">
-                            <label for="name" class="leading-7 text-sm text-gray-600">Nome</label>
-                            <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    <section class="text-custom-green py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <h2 class="text-dark mb-1">Entre em Contato</h2>
+                    <p class="text-muted mb-4">Preencha o formulário abaixo para entrar em contato conosco.</p>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label text-muted">Nome</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label text-muted">Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-2 w-1/2">
-                        <div class="relative">
-                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                            <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-muted">Mensagem</label>
+                            <textarea class="form-control" id="message" name="message" rows="4"></textarea>
                         </div>
-                    </div>
-                    <div class="p-2 w-full">
-                        <div class="relative">
-                            <label for="message" class="leading-7 text-sm text-gray-600">Mensagem</label>
-                            <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa de Localização -->
+    <section class="text-custom-green py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="text-dark">Nossa Localização</h2>
+                <p class="text-muted">Encontre-nos no mapa abaixo e venha nos visitar!</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="position-relative border border-custom-green rounded overflow-hidden" style="height: 400px;">
+                        <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=pt&q=Petshop%20Location&ie=UTF8&t=&z=14&iwloc=B&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded shadow-sm">
+                            <h3 class="h6 text-dark mb-1">ENDEREÇO</h3>
+                            <p class="mb-0 small">Rua Exemplo, 123, Bairro, Cidade, Estado</p>
                         </div>
-                    </div>
-                    <div class="p-2 w-full">
-                        <button class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
-     </section>
-     <!-- Mapa de  Localização -->
+    </section>
 
-     <section class="text-green-600 body-font relative">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-6">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Nossa Localização</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Encontre-nos no mapa abaixo e venha nos visitar!</p>
-            </div>
-        </div>
-        <div class="flex sm:flex-nowrap flex-wrap justify-center mt-4 mb-10">
-             <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex  items-end justify-start relative border-4 border-green-500">
-                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=pt&q=Petshop%20Location&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
-                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-                    <div class="lg:w-1/2 px-6">
-                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ENDEREÇO</h2>
-                        <p class="mt-1">Rua Exemplo, 123, Bairro, Cidade, Estado</p>
-                    </div>
-                </div> 
-            </div>
-        </div>
-     </section> 
     <!-- Footer -->
-    <footer class="bg-green-600 text-white body-font">
-        <div class="container p-5 mx-auto flex items-center sm:flex-row flex-col">
-            <a href="#" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" class="w-10 h-10">
-                <span class="ml-3 text-xl">Petshop</span>
-            </a>
-            <p class="text-sm text-white sm:ml-6 sm:mt-0 mt-4">&copy; 2024 Petshop -
-                <a class="text-white ml-1" rel="noompener noreferrer" href="#" target="_blank">@username</a>
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                <a class="text-white" href="#">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M18.36 6.64a9 9 0 011.94 9.57 9 9 0 01-1.94 3.09L18 18c.45-.45.85-.94 1.19-1.47A7.027 7.027 0 0018 12c0-1.2-.28-2.34-.79-3.37-.51-1.03-1.24-1.94-2.16-2.66zM5.64 6.64c.9-.9 1.97-1.62 3.09-2.16a7.048 7.048 0 013.37-.79c1.2 0 2.34.28 3.37.79a7.027 7.027 0 012.66 2.16L18 6c-.45-.45-.85-.94-1.19-1.47a9 9 0 00-9.57-1.94 9 9 0 00-3.09 1.94 9 9 0 00-2.16 2.66A7.048 7.048 0 003 12c0 1.2.28 2.34.79 3.37.51 1.03 1.24 1.94 2.16 2.66L6 18a9 9 0 01-1.94-9.57 9 9 0 011.94-3.09z"></path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-white" href="#">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-white" href="#">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-2.357.637 4.15 4.15 0 001.804-2.292 8.264 8.264 0 01-2.605.994 4.105 4.105 0 00-7.086 2.801A11.654 11.654 0 013 8.594a4.105 4.105 0 001.27 5.476 4.073 4.073 0 01-1.859-.513v.052a4.108 4.108 0 003.292 4.027 4.095 4.095 0 01-1.85.07 4.106 4.106 0 003.832 2.85A8.23 8.23 0 012 19.54 11.616 11.616 0 006.29 21c7.548 0 11.675-6.24 11.675-11.648 0-.177-.004-.354-.012-.53A8.344 8.344 0 0021 11.5z"></path>
-                    </svg>
-                </a>
-            </span>
+    <footer class="bg-custom-green text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <a href="#" class="text-white text-decoration-none d-flex align-items-center mb-2">
+                        <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" width="40" height="40">
+                        <span class="ms-3 fs-4">Petshop</span>
+                    </a>
+                    <p class="mb-0">&copy; 2024 Petshop - <a class="text-white" href="#" target="_blank">@username</a></p>
+                </div>
+                <div class="col-sm-6 text-sm-end">
+                    <a href="#" class="text-white me-2"><i class="bi bi-globe"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
         </div>
-    </footer> 
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
