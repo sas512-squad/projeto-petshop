@@ -11,458 +11,162 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/1053bad4f5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/MelhorAmigo/css/styleProdutos.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        color: '#ffffff',
-                        color1: '#00ff00',
-                        color2: ' #00b300',
-                        color3: ' #363c41',
-                    }
-                }
-            }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .bg-green-600 {
+            background-color: #28a745;
         }
-    </script>
-
+        .text-color3 {
+            color: #363c41;
+        }
+        .bg-color1 {
+            background-color: #00ff00;
+        }
+        .bg-color2 {
+            background-color: #00b300;
+        }
+        .hover-bg-color1:hover {
+            background-color: #00ff00;
+        }
+        .hover-bg-color2:hover {
+            background-color: #00b300;
+        }
+    </style>
 </head>
 
-<body class="bg-[#EEE2DF] font-sans leading-normal tracking-normal">
+<body class="bg-light font-sans">
 
-    <!--######################################### Header ##############################-->
-
+    <!-- Header -->
     <header class="bg-green-600">
-        <div class="container lg:w-[90vw] mx-auto flex flex-wrap p-5 flex-col md:flex-row ">
-            <a href="/MelhorAmigo/pages/index.html"
-                class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" class="lg:w-10 lg:h-10 w-8">
-                <span class="ml-3 text-xl">Petshop</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center lg:text-base justify-center">
-                <a href="/MelhorAmigo/pages/index.html" class="mr-5 text-white hover:text-gray-300">Home</a>
-                <a href="/MelhorAmigo/pages/produtos.html" class="mr-5 text-white hover:text-gray-300">Produtos</a>
-                <a href="/MelhorAmigo/pages/galeria.html" class="mr-5 text-white hover:text-gray-300">Galeria</a>
-                <a href="/MelhorAmigo/pages/contato.html" class="mr-5 text-white hover:text-gray-300">Contato</a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand d-flex align-items-center" href="/MelhorAmigo/pages/index.html">
+                    <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" class="mr-2" width="40" height="40">
+                    <span>Petshop</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/MelhorAmigo/pages/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/MelhorAmigo/pages/produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/MelhorAmigo/pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/MelhorAmigo/pages/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-light ml-lg-2">Agende um Horário</button>
+                </div>
             </nav>
-            <button
-                class="inline-flex items-center bg-white text-green-600 border-0 py-2 px-4 focus:outline-none hover:bg-gray-100 rounded lg:text-base mt-4 md:mt-0">
-                Agende um Horário
-            </button>
         </div>
-
     </header>
 
-
-    <!--################################## main ##############################-->
-
-    <main class=" pt-4">
-
-        <!--############################ serviços #####################################-->
-
-        <section class="w-full m-auto  sm:w-full sm:max-w-2xl md:w-full md:max-w-6xl mt-2 pt-2 px-4' ">
-
-            <section class=" bg-gray-100 flex lg:justify-evenly lg:items-center  rounded-2xl">
-                <div class="relative bottom-6 mx-4 p-5 ">
-                    <h1
-                        class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl lg:w-[500px] font-bold text-color3  ml-5 mt-7 ">
-                        Conheça
-                        nossos serviços</h1>
-                    <h3 class=" lg:my-2 md:w-80 sm:w-96 lg:text-lg text-color3 m-4 lg:w-[500px]  font-medium text-gray">
-                        No
-                        Petshop Melhor Amigo, oferecemos banhos relaxantes para cães e gatos, Além Proporcionamos
-                        serviços profissionais de tosa para cães de todas as raças.</h3>
-                    <button
-                        class="lg:mt-7 p-3 bg-color1 rounded-xl font-sans[Roboto] text-color text-center hover:bg-color2 hover:text-gray-300 lg:text-xl">Agendar</button>
+    <!-- Main Content -->
+    <main class="pt-4">
+        <!-- Serviços -->
+        <section class="container mt-4">
+            <div class="row bg-light rounded-lg p-4 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 font-weight-bold text-color3 mb-3">Conheça nossos serviços</h1>
+                    <p class="lead text-muted mb-4">No Petshop Melhor Amigo, oferecemos banhos relaxantes para cães e gatos, Além Proporcionamos serviços profissionais de tosa para cães de todas as raças.</p>
+                    <button class="btn btn-success btn-lg hover-bg-color1">Agendar</button>
                 </div>
-                <img src="../assets/ProdutosImg/banho2.jpeg"
-                    class="xl:w-[500px] lg:w-[350px] my-3 rounded-l-[100px] rounded-r-[100px] rounded-ss-[0px] hidden md:block md:w-72  w-full lg:block"
-                    alt="">
-
-            </section>
-
-
-
-            <!--################################### Banho ################################-->
-
-            <section
-                class="flex flex-col justify-center items-center border rounded-3xl lg:border-neutral-300 bg-[#a3da9c67] my-10 p-3 gap-5">
-                <h2
-                    class="text-color3 text-4xl sm:text-5xl xl:text-6xl my-4 font-[Roboto] md:w-[532px] text-center font-bold leading-[60px] ">
-                    Hora do Banho</h2>
-                <div class="flex justify-between flex-col lg:flex-row w-full items-center ">
-                    <div class="flex w-full  justify-evenly items-center lg:flex-col w-1/2">
-                        <img src="../assets/ProdutosImg/banho-e-tosa-04-1030x579.jpg"
-                            class="xl:w-[500px] shadow-indigo-400/40 shadow-2xl lg:h-[250px] xl:h-[350px] lg:w-[350px] w-32 h-32 sm:w-60 sm:h-60 m-1 my-5 lg:rounded-3xl rounded-full"
-                            alt="">
-                        <p class="mt-2 w-[350px] xl:w-[500px] text-sm lg:text-xl  text-slate-950">Utilizamos produtos de
-                            qualidade, seguros e adequados para cada tipo de pelagem, garantindo uma limpeza profunda e
-                            refrescante.
-                        </p>
-                    </div>
-                    <div class="flex w-full lg:h-full  justify-evenly items-center lg:flex-col w-1/2 h-60">
-                        <img src="../assets/ProdutosImg/dogFeliz.webp"
-                            class="xl:w-[500px] shadow-indigo-400/40 shadow-2xl lg:h-[250px] xl:h-[350px] lg:w-[350px] w-32 h-32 sm:w-60 sm:h-60 m-1 my-5 lg:rounded-3xl rounded-full"
-                            alt="">
-                        <p class="mt-2 w-[350px] xl:w-[500px] text-sm lg:text-xl text-slate-950">Nossos profissionais
-                            carinhosos proporcionam um ambiente tranquilo e seguro para que seu pet desfrute de um banho
-                            agradável, deixando-o com uma pelagem macia, brilhante e cheirosa.</p>
-                    </div>
-
+                <div class="col-lg-6 d-none d-md-block">
+                    <img src="../assets/ProdutosImg/banho2.jpeg" class="img-fluid rounded-pill" alt="">
                 </div>
-
-                <button
-                    class=" sm:my-5 p-3 bg-color2 rounded-3xl font-[Roboto] text-color text-center hover:bg-color1 hover:text-gray-100 text-xl">saiba
-                    mais</button>
-
-            </section>
-
-
-            <!--############################## Tosa ####################################-->
-
-            <section class="flex flex-col justify-center items-center rounded-3xl  bg-gray-200 my-10 gap-5">
-                <h2
-                    class="text-color3 text-4xl sm:text-5xl lg:text-6xl my-4 font-[Roboto] md:w-[532px] text-center font-bold leading-[60px] ">
-                    Ficou um gato Beethoven!</h2>
-                <div
-                    class="flex flex-col lg:flex-row lg:justify-start justify-center gap-10 p-10 items-center  w-full items-center ">
-                    <img src="../assets/ProdutosImg/Post_banho_e_tosa.jpg"
-                        class="xl:w-[500px] shadow-2xl shadow-indigo-800/80 lg:w-[350px]  h-[350px] my-3 rounded-3xl"
-                        alt="">
-                    <div class="flex  justify-evenly lg:items-start items-center flex-col">
-                        <p class="mt-1 lg:mt-2 text-lg lg:w-[500px] lg:text-xl  text-slate-950">Nossos tosadores
-                            experientes e qualificados utilizam técnicas avançadas para garantir que seu pet tenha um
-                            visual impecável. Além de cortes de pelos personalizados, também realizamos higienização e
-                            cuidados especiais, como limpeza de ouvidos e corte de unhas, deixando seu cãozinho limpo e
-                            bem cuidado.
-                        </p>
-                        <button
-                            class="my-5 p-3 bg-color2 rounded-3xl font-[Roboto] text-color text-center hover:bg-color1 hover:text-gray-100 text-xl">saiba
-                            mais</button>
-                    </div>
-
-
-                </div>
-
-
-            </section>
-
-            <!--######################### raçoes e outros produtos ################################ -->
-
-
-            <section class="containe flex flex-col items-center justify-center my-10 bg-gray-100  rounded-3xl">
-
-
-
-                <!-- ################### rações #################################-->
-
-                <h2
-                    class="text-color3 text-5xl lg:text-6xl my-4 font-[Roboto] md:w-[532px] text-center font-bold leading-[60px]">
-                    Rações</h2>
-                <section class="grid gap-4 m-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div class="md:w-[250px] flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900">Ração GoldeN
-                        </h3>
-                        <img src="../assets/ProdutosImg/RSpecialDog.jpg" alt="Produto"
-                            class="relative w-60 md:w-full  h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm">Ração Special Dog Premium Carne Plus para Cães Adultos</p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 13,90</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <h3 class="flex items-center justify-center text-center min-h-[4rem] font-bold text-gray-900">
-                            Ração Farmina N&D Ancestral Grain</h3>
-                        <img src="../assets/ProdutosImg/RaçãoFormina.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm ">Ração Farmina N&D Ancestral Grain para Cães Adultos...
-                                <span class="hidden"> de Raças Grandes Sabor Cordeiro e Blueberry - 10,1kg</span></p>
-                            <p class="text-gray-900 font-bold mt-1">R$ 422,99</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900"> Ração Guabi
-                            Natural Grain Free</h3>
-                        <img src="../assets/ProdutosImg/RaçãoFormina.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm">
-                                Ração Guabi Natural Grain Free para Gatos Adultos... <span class="hidden">Castrados
-                                    Sabor Salmão e Lentilha</span></p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 109,90</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900"> FreshMeat
-                        </h3>
-                        <img src="../assets/ProdutosImg/RFreshMeat.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm">
-                                Ração Fórmula Natural FreshMeat para Gatos Adultos... <span class="hidden">Castrados
-                                    Sabor Salmão</span></p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 72,45</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900"> Ração N&D
-                            Grain Free</h3>
-                        <img src="../assets/ProdutosImg/RN&DGrainFree.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="">
-                            <p class="min-h-[2rem] text-sm">
-                                Ração N&D Grain Free para Cães Filhotes de Raças... <span class="hidden">Grandes sabor
-                                    Frango e Romã 10,1kg</span></p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 470,90</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-
-                    <button
-                        class="mb-1 w-[60px] lg:h-1/2 sm:h-[100px] relative top-1/4 bg-gray-300 text-gray-800 py-1 rounded-r-full hover:bg-color1 flex items-center justify-center gap-1">Mais
-                        <i class="fa-solid fa-arrow-right fa-fade fa-sm "></i></button>
-
-                </section>
-
-
-
-
-                <!--########################## Brinquedos ###########################-->
-
-                <h2
-                    class="text-color3 text-5xl lg:text-6xl my-4 font-[Roboto] md:w-[532px] text-center font-bold leading-[60px]">
-                    Brinquedos Interativos</h2>
-                <section class="grid gap-4 m-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-                    <div class="md:w-[250px] flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <!-- <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900">Brinquedo Macaco Petz
-                        </h3> -->
-                        <img src="../assets/images/img-produto04.jpg" alt="Produto"
-                            class="relative w-60 md:w-full  h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm">Brinquedo Macaco Petz</p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 39,90</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <!-- <h3 class="flex items-center justify-center text-center min-h-[4rem] font-bold text-gray-900">
-                          </h3> -->
-                        <img src="../assets/ProdutosImg/Brinquedo1.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm ">  Brinquedo Líder Pet Bola Cravo para Cães - Cores Sortidas</p>
-                            <p class="text-gray-900 font-bold mt-1">R$ 7,99</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <!-- <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900"> Brinquedo e Comedouro Pet Games Labirinto Verde Água para Cães e Gatos</h3> -->
-                        <img src="../assets/ProdutosImg/Brinquedo2.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm">
-                                Brinquedo e Comedouro Pet Games Labirinto Verde Água</p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 40,90</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <!-- <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900"> FreshMeat
-                        </h3> -->
-                        <img src="../assets/ProdutosImg/Brinquedo3.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm">
-                                Brinquedo Capivara de Pelúcia Petz para Cães</p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 79,45</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <!-- <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900"> Ração N&D
-                            Grain Free</h3> -->
-                        <img src="../assets/ProdutosImg/Brinquedo5.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="">
-                            <p class="min-h-[2rem] text-sm">
-                                Brinquedo Piranha de Pelúcia Petz para Cães</p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 79,90</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-
-                    <button
-                        class="mb-1 w-[60px] lg:h-1/2 sm:h-[100px] relative top-1/4 bg-gray-300 text-gray-800 py-1 rounded-r-full hover:bg-color1 flex items-center justify-center gap-1">Mais
-                        <i class="fa-solid fa-arrow-right fa-fade fa-sm "></i></button>
-
-                </section>
-
-
-
-
-
-                <!--##################### Produtos de Higiene e Cuidados #######################-->
-
-
-                <h2
-                    class="text-color3 text-5xl lg:text-6xl my-4 font-[Roboto] md:w-[532px] text-center font-bold leading-[60px]">
-                    Produtos de Higiene e Cuidados</h2>
-                <section class="grid gap-4 m-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div class="md:w-[250px] flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer ">
-                        <!-- <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900">Ração GoldeN
-                        </h3> -->
-                        <img src="../assets/ProdutosImg/Produto1jpg.jpg" alt="Produto"
-                            class="relative w-60 md:w-full  h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm">Eliminador de Odores Lavanda UP Clean - p/ Cães e Gatos</p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 13,90</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer ">
-                        <!-- <h3 class="flex items-center justify-center text-center min-h-[4rem] font-bold text-gray-900">
-                            Ração Farmina N&D Ancestral Grain</h3> -->
-                        <img src="../assets/ProdutosImg/Produto2.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm ">Hidratante de Patas e Focinho - p/ Cães</p>
-                            <p class="text-gray-900 font-bold mt-1">R$ 15,99</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <!-- <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900"> Ração Guabi
-                            Natural Grain Free</h3> -->
-                        <img src="../assets/ProdutosImg/Produto3.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm">
-                                Dug's Coleira Antiparasitario</p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 40,90</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer">
-                        <!-- <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900"> FreshMeat
-                        </h3> -->
-                        <img src="../assets/ProdutosImg/Produto4.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="p-">
-                            <p class="min-h-[2rem] text-sm">
-                                Hectotrio spot gg cães (acima de 24 KG)</p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 29,45</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-                    <div class="flex flex-col items-center bg-white p-4 rounded-lg shadow-lg cursor-pointer ">
-                        <!-- <h3 class="flex items-center justify-center min-h-[4rem] font-bold text-gray-900"> Ração N&D
-                            Grain Free</h3> -->
-                        <img src="../assets/ProdutosImg/Produto5.jpg" alt="Produto"
-                            class="relative w-60 md:w-full h-60">
-                        <div class="">
-                            <p class="min-h-[2rem] text-sm">
-                                Hectotrio spot fp gato (1 a 4KG)</p>
-                            <p class="text-gray-900 font-bold  mt-1">R$ 24,90</p>
-                            <button
-                                class="mt-4 w-full bg-color2 text-white py-2 rounded-lg hover:bg-color1">Comprar</button>
-                        </div>
-
-                    </div>
-
-                    <button
-                        class="mb-1 w-[60px] lg:h-1/2 sm:h-[100px] relative top-1/4 bg-gray-300 text-gray-800 py-1 rounded-r-full hover:bg-color1 flex items-center justify-center gap-1">Mais
-                        <i class="fa-solid fa-arrow-right fa-fade fa-sm "></i></button>
-
-                </section>
-
-
-
-
-            </section>
+            </div>
         </section>
 
+        <!-- Banho -->
+        <section class="container my-5 bg-light rounded-lg p-4">
+            <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Hora do Banho</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <img src="../assets/ProdutosImg/banho-e-tosa-04-1030x579.jpg" class="img-fluid rounded-lg shadow mb-3" alt="">
+                    <p class="text-muted">Utilizamos produtos de qualidade, seguros e adequados para cada tipo de pelagem, garantindo uma limpeza profunda e refrescante.</p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <img src="../assets/ProdutosImg/dogFeliz.webp" class="img-fluid rounded-lg shadow mb-3" alt="">
+                    <p class="text-muted">Nossos profissionais carinhosos proporcionam um ambiente tranquilo e seguro para que seu pet desfrute de um banho agradável, deixando-o com uma pelagem macia, brilhante e cheirosa.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
+            </div>
+        </section>
 
+        <!-- Tosa -->
+        <section class="container my-5 bg-light rounded-lg p-4">
+            <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Ficou um gato Beethoven!</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <img src="../assets/ProdutosImg/Post_banho_e_tosa.jpg" class="img-fluid rounded-lg shadow" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead text-muted mb-4">Nossos tosadores experientes e qualificados utilizam técnicas avançadas para garantir que seu pet tenha um visual impecável. Além de cortes de pelos personalizados, também realizamos higienização e cuidados especiais, como limpeza de ouvidos e corte de unhas, deixando seu cãozinho limpo e bem cuidado.</p>
+                    <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
+                </div>
+            </div>
+        </section>
 
+        <!-- Rações e outros produtos -->
+        <section class="container my-5 bg-light rounded-lg p-4">
+            <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Rações</h2>
+            <div class="row">
+                <!-- Produto 1 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <h3 class="card-header text-center">Ração GoldeN</h3>
+                        <img src="../assets/ProdutosImg/RSpecialDog.jpg" class="card-img-top" alt="Produto">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text flex-grow-1">Ração Special Dog Premium Carne Plus para Cães Adultos</p>
+                            <p class="card-text font-weight-bold">R$ 13,90</p>
+                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repita para os outros produtos -->
+            </div>
+            <div class="text-right">
+                <button class="btn btn-secondary rounded-circle">
+                    Mais <i class="fa-solid fa-arrow-right fa-fade fa-sm"></i>
+                </button>
+            </div>
+        </section>
     </main>
 
-
-    <!--################################ Footer ###############################################-->
-
-
-
-
-    <footer class="bg-green-600 text-white body-font">
-        <div class="container p-5 mx-auto flex items-center sm:flex-row flex-col lg:w-[90vw]">
-            <a href="#" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" class="w-10 h-10">
-                <span class="ml-3 text-xl">Petshop</span>
-            </a>
-            <p class="text-sm text-white sm:ml-6 sm:mt-0 mt-4">&copy; 2024 Petshop -
-                <a class="text-white ml-1" rel="noompener noreferrer" href="#" target="_blank">@username</a>
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                <a class="text-white" href="#">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        class="w-5 h-5" viewBox="0 0 24 24">
-                        <path
-                            d="M18.36 6.64a9 9 0 011.94 9.57 9 9 0 01-1.94 3.09L18 18c.45-.45.85-.94 1.19-1.47A7.027 7.027 0 0018 12c0-1.2-.28-2.34-.79-3.37-.51-1.03-1.24-1.94-2.16-2.66zM5.64 6.64c.9-.9 1.97-1.62 3.09-2.16a7.048 7.048 0 013.37-.79c1.2 0 2.34.28 3.37.79a7.027 7.027 0 012.66 2.16L18 6c-.45-.45-.85-.94-1.19-1.47a9 9 0 00-9.57-1.94 9 9 0 00-3.09 1.94 9 9 0 00-2.16 2.66A7.048 7.048 0 003 12c0 1.2.28 2.34.79 3.37.51 1.03 1.24 1.94 2.16 2.66L6 18a9 9 0 01-1.94-9.57 9 9 0 011.94-3.09z">
-                        </path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-white" href="#">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        class="w-5 h-5" viewBox="0 0 24 24">
-                        <path
-                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                        </path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-white" href="#">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path
-                            d="M21 11.5a8.38 8.38 0 01-2.357.637 4.15 4.15 0 001.804-2.292 8.264 8.264 0 01-2.605.994 4.105 4.105 0 00-7.086 2.801A11.654 11.654 0 013 8.594a4.105 4.105 0 001.27 5.476 4.073 4.073 0 01-1.859-.513v.052a4.108 4.108 0 003.292 4.027 4.095 4.095 0 01-1.85.07 4.106 4.106 0 003.832 2.85A8.23 8.23 0 012 19.54 11.616 11.616 0 006.29 21c7.548 0 11.675-6.24 11.675-11.648 0-.177-.004-.354-.012-.53A8.344 8.344 0 0021 11.5z">
-                        </path>
-                    </svg>
-                </a>
-            </span>
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <a href="#" class="text-white text-decoration-none d-flex align-items-center">
+                        <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" width="40" height="40" class="mr-2">
+                        <span class="h5 mb-0">Petshop</span>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2024 Petshop - <a href="#" class="text-white">@username</a></p>
+                </div>
+                <div class="col-md-4 text-md-right">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
