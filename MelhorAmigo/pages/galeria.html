@@ -3,56 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Melhor Amigo | Amor e Cuidado para cada pata. </title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Galeria - Petshop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/styleGaleria.css">
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-light">
     <!-- Header -->
-    <header class="bg-green-600">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row">
-            <a href="/MelhorAmigo/pages/index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" class="w-10 h-10">
-                <span class="ml-3 text-xl">Petshop</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a href="/MelhorAmigo/pages/index.html" class="mr-5 text-white hover:text-gray-300">Home</a>
-                <a href="/MelhorAmigo/pages/produtos.html" class="mr-5 text-white hover:text-gray-300">Produtos</a>
-                <a href="/MelhorAmigo/pages/galeria.html" class="mr-5 text-white hover:text-gray-300">Galeria</a>
-                <a href="/MelhorAmigo/pages/contato.html" class="mr-5 text-white hover:text-gray-300">Contato</a>
-            </nav>
-                <button class="inline-flex items-center bg-white text-green-600 border-0 py-2 px-4 focus:outline-none hover:bg-gray-100 rounded text-base mt-4 md:mt-0">
-                    Agende um Horário
-                </button>
+    <header class="bg-custom-green">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="text-white text-decoration-none d-flex align-items-center">
+                        <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" width="40" height="40">
+                        <span class="ms-3 fs-4">Petshop</span>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <nav class="d-flex justify-content-center">
+                        <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="text-white text-decoration-none me-3">Home</a>
+                        <a href="/projeto-petshop/MelhorAmigo/pages/produtos.html" class="text-white text-decoration-none me-3">Produtos</a>
+                        <a href="/projeto-petshop/MelhorAmigo/pages/galeria.html" class="text-white text-decoration-none me-3">Galeria</a>
+                        <a href="/projeto-petshop/MelhorAmigo/pages/contato.html" class="text-white text-decoration-none">Contato</a>
+                    </nav>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-light text-custom-green">Agende um Horário</button>
+                </div>
+            </div>
         </div>
-    </header> 
-     <!-- Footer -->
-     <footer class="bg-green-600 text-white body-font">
-        <div class="container p-5 mx-auto flex items-center sm:flex-row flex-col">
-            <a href="#" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" class="w-10 h-10">
-                <span class="ml-3 text-xl">Petshop</span>
-            </a>
-            <p class="text-sm text-white sm:ml-6 sm:mt-0 mt-4">&copy; 2024 Petshop -
-                <a class="text-white ml-1" rel="noompener noreferrer" href="#" target="_blank">@username</a>
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                <a class="text-white" href="#">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M18.36 6.64a9 9 0 011.94 9.57 9 9 0 01-1.94 3.09L18 18c.45-.45.85-.94 1.19-1.47A7.027 7.027 0 0018 12c0-1.2-.28-2.34-.79-3.37-.51-1.03-1.24-1.94-2.16-2.66zM5.64 6.64c.9-.9 1.97-1.62 3.09-2.16a7.048 7.048 0 013.37-.79c1.2 0 2.34.28 3.37.79a7.027 7.027 0 012.66 2.16L18 6c-.45-.45-.85-.94-1.19-1.47a9 9 0 00-9.57-1.94 9 9 0 00-3.09 1.94 9 9 0 00-2.16 2.66A7.048 7.048 0 003 12c0 1.2.28 2.34.79 3.37.51 1.03 1.24 1.94 2.16 2.66L6 18a9 9 0 01-1.94-9.57 9 9 0 011.94-3.09z"></path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-white" href="#">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-white" href="#">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-2.357.637 4.15 4.15 0 001.804-2.292 8.264 8.264 0 01-2.605.994 4.105 4.105 0 00-7.086 2.801A11.654 11.654 0 013 8.594a4.105 4.105 0 001.27 5.476 4.073 4.073 0 01-1.859-.513v.052a4.108 4.108 0 003.292 4.027 4.095 4.095 0 01-1.85.07 4.106 4.106 0 003.832 2.85A8.23 8.23 0 012 19.54 11.616 11.616 0 006.29 21c7.548 0 11.675-6.24 11.675-11.648 0-.177-.004-.354-.012-.53A8.344 8.344 0 0021 11.5z"></path>
-                    </svg>
-                </a>
-            </span>
+    </header>
+
+    <!-- Conteúdo da Galeria (a ser adicionado) -->
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Galeria de Fotos</h1>
+        <!-- Adicione aqui o conteúdo da galeria -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-custom-green text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <a href="#" class="text-white text-decoration-none d-flex align-items-center mb-2">
+                        <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" width="40" height="40">
+                        <span class="ms-3 fs-4">Petshop</span>
+                    </a>
+                    <p class="mb-0">&copy; 2024 Petshop - <a class="text-white" href="#" target="_blank">@username</a></p>
+                </div>
+                <div class="col-sm-6 text-sm-end">
+                    <a href="#" class="text-white me-2"><i class="bi bi-globe"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
         </div>
-    </footer> 
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
