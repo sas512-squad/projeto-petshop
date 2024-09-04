@@ -12,3 +12,23 @@
     color: #fff;
     background-color: #16a34a;
 }
+.isso {
+    border: none;
+  }
+  .img-card {
+    height: 20rem;
+    width: 100%; /* Adiciona largura completa para manter a proporção */
+  }
+  .modal-img {
+    height: 60vmin;
+    width: 60vmin;
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
+  }
+  .modal-body {
+    text-align: center; /* Centraliza o texto */
+  }
+  .modal-body p {
+    max-width: 60vmin; /* Limita a largura máxima do parágrafo para o tamanho da imagem */
+    margin: 10px auto; /* Adiciona uma margem automática para centralizar o texto */
+    text-align: justify; /* Justifica o texto para melhor aparência */
+    overflow-wrap: break-word;}
