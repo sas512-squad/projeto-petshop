@@ -1,0 +1,41 @@
+.fit-cover {
+  object-fit: cover;
+}
+
+.custom-navbar {
+  --bs-bg-opacity: 1;
+  background-color: #d5ef96;
+}
+
+.title-navbar {
+  font-weight: bold;
+  color: #7878FF;
+  margin: 0.75rem 0 0;
+}
+
+.custom-input-group {
+  margin: 0.75rem 0 0;
+}
+
+.custom-toggler {
+  border: none;
+}
+
+.img-navbar {
+  margin: 0.75rem 0 0;
+}
+
+.links-navbar {
+  margin: 0.75rem 0 0;
+}
+
+@media (max-width: 360px) {
+  .title-navbar {
+    font-size: 1.24rem;
+  }
+}
+
+.custom-toggler-navbar {
+  margin: 0.75rem 0 0;
+}
+

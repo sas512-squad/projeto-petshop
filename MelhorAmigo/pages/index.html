@@ -1,62 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html data-bs-theme="light" lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/MelhorAmigo/assets/images/melhoramigo.ico">
     <title>Melhor Amigo | Amor e Cuidado para cada pata.</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="./../css/styleIndex.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="/MelhorAmigo/css/Footer-Multi-Column-icons.css">
+    <link rel="stylesheet" href="/MelhorAmigo/css/Hero-Carousel-images.css">
+    <link rel="stylesheet" href="/MelhorAmigo/css/Navbar-Centered-Brand-Dark-icons.css">
+    <link rel="stylesheet" href="/MelhorAmigo/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="/MelhorAmigo/css/Simple-Slider.css">
+    <link rel="stylesheet" href="/MelhorAmigo/css/swiper-icons.css">
 </head>
-<body class="bg-light">
-    <!-- Header -->
-    <header class="bg-custom-green">
-        <div class="container py-3">
-            <div class="row align-items-center">
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="text-white text-decoration-none d-flex align-items-center">
-                        <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" width="40" height="40">
-                        <span class="ms-3 fs-4">Petshop</span>
-                    </a>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md sticky-top d-flex py-3 custom-navbar">
+            <div class="container">
+                <button data-bs-toggle="collapse" class="navbar-toggler border-0 custom-toggler-navbar" data-bs-target="#navcol-2">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <span class="bs-icon-sm d-flex justify-content-center align-items-center me-2 bs-icon">
+                        <img class="img-fluid img-navbar" src="/MelhorAmigo/assets/images/pma-logo.png"/>
+                    </span>
+                    <span class="d-flex title-navbar">Petshop Melhor Amigo</span>
+                </a>
+                <div class="input-group custom-input-group">
+                    <input class="border rounded-pill form-control" type="text" placeholder="O que seu pet precisa?" autocomplete="on" data-bs-theme="light">
                 </div>
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <nav class="d-flex justify-content-center">
-                        <a href="/projeto-petshop/MelhorAmigo/pages/index.html" class="text-white text-decoration-none me-3">Home</a>
-                        <a href="/projeto-petshop/MelhorAmigo/pages/produtos.html" class="text-white text-decoration-none me-3">Produtos</a>
-                        <a href="/projeto-petshop/MelhorAmigo/pages/galeria.html" class="text-white text-decoration-none me-3">Galeria</a>
-                        <a href="/projeto-petshop/MelhorAmigo/pages/contato.html" class="text-white text-decoration-none">Contato</a>
-                    </nav>
-                </div>
-                <div class="col-md-2">
-                    <button class="btn btn-light text-custom-green">Agende um Horário</button>
+                <div class="collapse navbar-collapse" id="navcol-2">
+                    <ul class="navbar-nav links-navbar">
+                        <li class="nav-item"><a class="nav-link active fw-semibold" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="contato.html">Contato</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
-
-     <!-- Footer -->
-     <footer class="bg-custom-green text-white py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <a href="#" class="text-white text-decoration-none d-flex align-items-center mb-2">
-                        <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" width="40" height="40">
-                        <span class="ms-3 fs-4">Petshop</span>
-                    </a>
-                    <p class="mb-0">&copy; 2024 Petshop - <a class="text-white" href="#" target="_blank">@username</a></p>
+    <section>
+        <div class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" id="carousel-1">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img class="w-100 d-block" src="/MelhorAmigo/assets/images/img-principal04.png" alt="Slide Image"></div>
+                <div class="carousel-item"><img class="w-100 d-block" src="/MelhorAmigo/assets/images/img-principal01.png" alt="Slide Image"></div>
+                <div class="carousel-item"><img class="w-100 d-block" src="/MelhorAmigo/assets/images/img-principal02.png" alt="Slide Image"></div>
+                <div class="carousel-item"><img class="w-100 d-block" src="/MelhorAmigo/assets/images/img-principal03.png" alt="Slide Image"></div>
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3"></button></div>
+        </div>
+    </section>
+    <main>
+        <section class="py-4 py-xl-5">
+            <div class="container">
+                <div class="text-dark border rounded border-1 border-dark shadow d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5 custom-bg-nl" data-aos="fade-left" data-aos-duration="400" data-aos-delay="100" data-bs-theme="light">
+                    <div class="text-center text-lg-start py-3 py-lg-1">
+                        <h2 class="fs-6 fw-bold text-start mb-2 custom-text-nl">Cadastre-se e receba nossas promoções e novidades antes de todo mundo.</h2>
+                    </div>
+                    <form class="d-flex justify-content-center flex-wrap my-2" method="post">
+                        <div class="my-2"><input class="border rounded border-1 border-dark form-control" type="email" name="email" placeholder="Seu e-mail"></div>
+                        <div class="my-2"><button class="btn border rounded border-1 border-dark ms-sm-2 custom-text-nl" type="submit">Cadastrar</button></div>
+                    </form>
                 </div>
-                <div class="col-sm-6 text-sm-end">
-                    <a href="#" class="text-white me-2"><i class="bi bi-globe"></i></a>
-                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Institucional</h3>
+                    <ul class="list-unstyled">
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Sobre o Melhor Amigo</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Trabalhe Conosco</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Canal de Denúncias</a></li>
+                    </ul>
                 </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Aqui Você Encontra</h3>
+                    <ul class="list-unstyled">
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Como Comprar</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Clube Melhor Amigo</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Nossos Diferenciais</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Nossas Políticas</h3>
+                    <ul class="list-unstyled">
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Entrega e Frete</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Pagamento e Reembolso</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Ajuda</h3>
+                    <ul class="list-unstyled">
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Atendimento</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Meus Pedidos</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer" href="#">Ouvidoria</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="fw-bold d-inline-flex flex-column justify-content-center align-items-center align-items-lg-start pt-3">
+                <p class="text-muted mb-0">Redes Sociais</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-youtube">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-tiktok">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center justify-content-lg-center pt-3">
+                <p class="text-center d-lg-flex justify-content-lg-center align-items-lg-center mb-0 custom-font-footer">Petshop Melhor Amigo - CNPJ 51.267.118/0006-42 - Endereço: Rua João José Rescala, 326 - Imbuí - Salvador - BA - CEP: 41720-000</p>
+                <p class="text-center d-lg-flex justify-content-lg-center align-items-lg-center mb-0 custom-font-footer">Copyright © Petshop Melhor Amigo Comércio e Participações S/A - Todos os direitos reservados</p>
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/MelhorAmigo/javascript/bs-init.js"></script>
+    <script src="/MelhorAmigo/javascript/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="/MelhorAmigo/javascript/Simple-Slider.js"></script>
 </body>
+
 </html>
