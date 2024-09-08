@@ -1,34 +1,56 @@
 .bg-custom-green {
-    background-color: #16a34a;
+  background-color: #16a34a;
 }
 .text-custom-green {
-    color: #16a34a;
+  color: #16a34a;
 }
 .btn-outline-custom-green {
-    color: #16a34a;
-    border-color: #16a34a;
+  color: #16a34a;
+  border-color: #16a34a;
 }
 .btn-outline-custom-green:hover {
-    color: #fff;
-    background-color: #16a34a;
+  color: #fff;
+  background-color: #16a34a;
 }
 .isso {
-    border: none;
-  }
+  border: none;
+}
+.img-card {
+  height: 20rem;
+  width: 100%; /* Adiciona largura completa para manter a proporção */
+}
+.modal-img {
+  height: 60vmin;
+  width: 60vmin;
+  object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
+}
+.modal-body {
+  text-align: center; /* Centraliza o texto */
+}
+.modal-body p {
+  max-width: 60vmin; /* Limita a largura máxima do parágrafo para o tamanho da imagem */
+  margin: 10px auto; /* Adiciona uma margem automática para centralizar o texto */
+  text-align: justify; /* Justifica o texto para melhor aparência */
+  overflow-wrap: break-word;
+}
+
   .img-card {
-    height: 20rem;
-    width: 100%; /* Adiciona largura completa para manter a proporção */
-  }
-  .modal-img {
-    height: 60vmin;
-    width: 60vmin;
-    object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
-  }
-  .modal-body {
-    text-align: center; /* Centraliza o texto */
-  }
-  .modal-body p {
-    max-width: 60vmin; /* Limita a largura máxima do parágrafo para o tamanho da imagem */
-    margin: 10px auto; /* Adiciona uma margem automática para centralizar o texto */
-    text-align: justify; /* Justifica o texto para melhor aparência */
-    overflow-wrap: break-word;}
+    width: 100%;
+    height: auto;
+}
+.modal-img {
+    width: 100%;
+    height: auto;
+}
+
+.textoh1{
+  padding: 5px;
+  margin: 5px;
+}
+h1{
+  padding: 2px;
+  margin: 2px;
+  border-bottom: 2px solid #d5ef96;
+  width: 60vw;
+  text-align: center;
+}
