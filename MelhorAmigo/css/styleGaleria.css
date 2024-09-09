@@ -1,32 +1,45 @@
+main {
+  padding-bottom: 100px;
+  background-color: #fff6e0;
+ }
+
 .bg-custom-green {
   background-color: #16a34a;
 }
+
 .text-custom-green {
   color: #16a34a;
 }
+
 .btn-outline-custom-green {
   color: #16a34a;
   border-color: #16a34a;
 }
+
 .btn-outline-custom-green:hover {
   color: #fff;
   background-color: #16a34a;
 }
+
 .isso {
   border: none;
 }
+
 .img-card {
   height: 20rem;
   width: 100%; /* Adiciona largura completa para manter a proporção */
 }
+
 .modal-img {
   height: 60vmin;
   width: 60vmin;
   object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
 }
+
 .modal-body {
   text-align: center; /* Centraliza o texto */
 }
+
 .modal-body p {
   max-width: 60vmin; /* Limita a largura máxima do parágrafo para o tamanho da imagem */
   margin: 10px auto; /* Adiciona uma margem automática para centralizar o texto */
@@ -34,23 +47,77 @@
   overflow-wrap: break-word;
 }
 
-  .img-card {
-    width: 100%;
-    height: auto;
-}
-.modal-img {
-    width: 100%;
-    height: auto;
+.img-card {
+  width: 100%;
+  height: auto;
 }
 
-.textoh1{
-  padding: 5px;
-  margin: 5px;
+/* SUPERIOR DIREITA INFERIOR ESQUERDA */
+.modal-img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #d5ef96;
+  border-bottom: 0px;
 }
-h1{
-  padding: 2px;
-  margin: 2px;
-  border-bottom: 2px solid #d5ef96;
-  width: 60vw;
+
+.custom-banner-galeria {
+  width: 100%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.custom-banner-div {
+  position: sticky;
+  top: 0;
+  transition: 1s;
+  z-index: 10;
+}
+
+.custom-btn-galeria {
+  border: 1px solid black;
+  transition: ease-in-out 0.2s;
+}
+
+.custom-btn-galeria:hover{
+  transform: scale(1.050);
+  background-color: #d5ef96;
+  transition: ease-in-out 0.5s;
+}
+
+.custom-legenda-galeria {
+  font-weight: bold;
+  margin: 0.313rem 0 0.313rem 0px;
+}
+
+.custom-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-modal-titulo-galeria {
+  flex-grow: 1;
   text-align: center;
+}
+
+#custom-btn-galeria {
+  margin: 0px;
+  padding: 0px;
+}
+
+#custom-modal-body {
+  padding: 1rem 1rem 0px 1rem;
+}
+
+/* SUPERIOR DIREITA INFERIOR ESQUERDA */
+.custom-modal-legenda {
+  margin: 0rem 1rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fff6e0;
+  border-radius: 0px 0px 20px 20px;
+  border: 2px solid #d5ef96;
+  border-top: 0px;
+  padding-top: 0.625rem;
 }
