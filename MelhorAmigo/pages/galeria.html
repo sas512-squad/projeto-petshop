@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md sticky-top d-flex py-3 custom-navbar">
+        <nav class="navbar navbar-expand-md sticky-top d-flex py-5 custom-navbar">
             <div class="container">
                 <button data-bs-toggle="collapse" class="navbar-toggler border-0 custom-toggler-navbar" data-bs-target="#navcol-2">
                     <span class="visually-hidden">Toggle navigation</span>
@@ -45,215 +45,233 @@
         </nav>
     </header>
 
-    <!-- Conteúdo da Galeria -->
     <main class="flex-grow-1">
         
-        <div class="d-flex justify-content-center textoh1">
-            <h1 >Nossa Petleria</h1>
+        <div class="d-flex justify-content-center custom-banner-div">
+            <img class="custom-banner-galeria" src="../assets/images/img-banner-galeria.png" alt="banner da petleria">
         </div>
         
         <section class="container my-4">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                    <!-- butao -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal1">
-                        <img class="img-card img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <button class="btn btn-light custom-btn-galeria" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <img class="img-card img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                        <p class="custom-legenda-galeria">Cleitinho</p>
                     </button>
                     <!-- modal -->
                     <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal1Label">Imagem 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-header custom-modal-header">
+                                    <h5 class="modal-title custom-modal-titulo-galeria" id="modal1Label">Gatinho Resgatado - Cleitinho</h5>
+                                    <button type="button" class="btn-close" id="custom-btn-galeria" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <img class="modal-img img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <p>Aqui temos uma imagem de um gatinho muito fofo.</p>
+                                <div class="modal-body" id="custom-modal-body">
+                                    <img class="modal-img img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                                </div>
+                                <div class="modal-legenda">
+                                    <p class="custom-modal-legenda">Cleitinho foi encontrado em um estacionamento de uma das nossas unidades! A equipe resgatou ele e hoje ele faz parte da família.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
                 <div class="col">
-                    <!-- butao -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal2">
-                        <img class="img-card img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    
+                    <button class="btn btn-light custom-btn-galeria" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <img class="img-card img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                        <p class="custom-legenda-galeria">Cleitinho</p>
                     </button>
-                    <!-- modal -->
-                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                    
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal2Label">Imagem 2</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-header custom-modal-header">
+                                    <h5 class="modal-title custom-modal-titulo-galeria" id="modal1Label">Gatinho Resgatado - Cleitinho</h5>
+                                    <button type="button" class="btn-close" id="custom-btn-galeria" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <img class="modal-img img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <p>Aqui temos uma imagem de um gatinho muito fofo.</p>
+                                <div class="modal-body" id="custom-modal-body">
+                                    <img class="modal-img img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                                </div>
+                                <div class="modal-legenda">
+                                    <p class="custom-modal-legenda">Cleitinho foi encontrado em um estacionamento de uma das nossas unidades! A equipe resgatou ele e hoje ele faz parte da família.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col">
 
-                </div>
-                <div class="col">
-                    <!-- butao -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
-                        <img class="img-card img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <button class="btn btn-light custom-btn-galeria" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <img class="img-card img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                        <p class="custom-legenda-galeria">Cleitinho</p>
                     </button>
-                    <!-- modal -->
-                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal3Label">Imagem 3</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-header custom-modal-header">
+                                    <h5 class="modal-title custom-modal-titulo-galeria" id="modal1Label">Gatinho Resgatado - Cleitinho</h5>
+                                    <button type="button" class="btn-close" id="custom-btn-galeria" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <img class="modal-img img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <p>Aqui temos uma imagem de um gatinho muito fofo.</p>
+                                <div class="modal-body" id="custom-modal-body">
+                                    <img class="modal-img img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                                </div>
+                                <div class="modal-legenda">
+                                    <p class="custom-modal-legenda">Cleitinho foi encontrado em um estacionamento de uma das nossas unidades! A equipe resgatou ele e hoje ele faz parte da família.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </section>
         <section class="container my-4">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                   <!-- butao -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal1">
-                        <img class="img-card img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </button>
-                    <!-- modal -->
-                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal1Label">Imagem 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="modal-img img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <p>Aqui temos uma imagem de um gatinho muito fofo.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <!-- butao -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal2">
-                        <img class="img-card img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </button>
-                    <!-- modal -->
-                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal2Label">Imagem 2</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="modal-img img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <p>Aqui temos uma imagem de um gatinho muito fofo.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col">
-                    <!-- butao -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
-                        <img class="img-card img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <button class="btn btn-light custom-btn-galeria" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <img class="img-card img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                        <p class="custom-legenda-galeria">Cleitinho</p>
                     </button>
-                    <!-- modal -->
-                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+
+                    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal3Label">Imagem 3</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-header custom-modal-header">
+                                    <h5 class="modal-title custom-modal-titulo-galeria" id="modal1Label">Gatinho Resgatado - Cleitinho</h5>
+                                    <button type="button" class="btn-close" id="custom-btn-galeria" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <img class="modal-img img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <p>Aqui temos uma imagem de um gatinho muito fofo.</p>
+                                <div class="modal-body" id="custom-modal-body">
+                                    <img class="modal-img img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                                </div>
+                                <div class="modal-legenda">
+                                    <p class="custom-modal-legenda">Cleitinho foi encontrado em um estacionamento de uma das nossas unidades! A equipe resgatou ele e hoje ele faz parte da família.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
+                <div class="col">
+
+                    <button class="btn btn-light custom-btn-galeria" data-bs-toggle="modal" data-bs-target="#modal5">
+                        <img class="img-card img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                        <p class="custom-legenda-galeria">Cleitinho</p>
+                    </button>
+
+                    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header custom-modal-header">
+                                    <h5 class="modal-title custom-modal-titulo-galeria" id="modal1Label">Gatinho Resgatado - Cleitinho</h5>
+                                    <button type="button" class="btn-close" id="custom-btn-galeria" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="custom-modal-body">
+                                    <img class="modal-img img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                                </div>
+                                <div class="modal-legenda">
+                                    <p class="custom-modal-legenda">Cleitinho foi encontrado em um estacionamento de uma das nossas unidades! A equipe resgatou ele e hoje ele faz parte da família.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <button class="btn btn-light custom-btn-galeria" data-bs-toggle="modal" data-bs-target="#modal6">
+                        <img class="img-card img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                        <p class="custom-legenda-galeria">Cleitinho</p>
+                    </button>
+
+                    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header custom-modal-header">
+                                    <h5 class="modal-title custom-modal-titulo-galeria" id="modal1Label">Gatinho Resgatado - Cleitinho</h5>
+                                    <button type="button" class="btn-close" id="custom-btn-galeria" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="custom-modal-body">
+                                    <img class="modal-img img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                                </div>
+                                <div class="modal-legenda">
+                                    <p class="custom-modal-legenda">Cleitinho foi encontrado em um estacionamento de uma das nossas unidades! A equipe resgatou ele e hoje ele faz parte da família.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
         <section class="container my-4">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                   <!-- butao -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal1">
-                        <img class="img-card img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </button>
-                    <!-- modal -->
-                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal1Label">Imagem 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="modal-img img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <p>Aqui temos uma imagem de um gatinho muito fofo.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <!-- butao -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal2">
-                        <img class="img-card img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </button>
-                    <!-- modal -->
-                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal2Label">Imagem 2</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="modal-img img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <p>Aqui temos uma imagem de um gatinho muito fofo.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col">
-                    <!-- butao -->
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
-                        <img class="img-card img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <button class="btn btn-light custom-btn-galeria" data-bs-toggle="modal" data-bs-target="#modal7">
+                        <img class="img-card img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                        <p class="custom-legenda-galeria">Cleitinho</p>
                     </button>
-                    <!-- modal -->
-                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+
+                    <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal3Label">Imagem 3</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-header custom-modal-header">
+                                    <h5 class="modal-title custom-modal-titulo-galeria" id="modal1Label">Gatinho Resgatado - Cleitinho</h5>
+                                    <button type="button" class="btn-close" id="custom-btn-galeria" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <img class="modal-img img-fluid" src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <p>Aqui temos uma imagem de um gatinho muito fofo.</p>
+                                <div class="modal-body" id="custom-modal-body">
+                                    <img class="modal-img img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                                </div>
+                                <div class="modal-legenda">
+                                    <p class="custom-modal-legenda">Cleitinho foi encontrado em um estacionamento de uma das nossas unidades! A equipe resgatou ele e hoje ele faz parte da família.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <button class="btn btn-light custom-btn-galeria" data-bs-toggle="modal" data-bs-target="#modal8">
+                        <img class="img-card img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                        <p class="custom-legenda-galeria">Cleitinho</p>
+                    </button>
+
+                    <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header custom-modal-header">
+                                    <h5 class="modal-title custom-modal-titulo-galeria" id="modal1Label">Gatinho Resgatado - Cleitinho</h5>
+                                    <button type="button" class="btn-close" id="custom-btn-galeria" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="custom-modal-body">
+                                    <img class="modal-img img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                                </div>
+                                <div class="modal-legenda">
+                                    <p class="custom-modal-legenda">Cleitinho foi encontrado em um estacionamento de uma das nossas unidades! A equipe resgatou ele e hoje ele faz parte da família.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <button class="btn btn-light custom-btn-galeria" data-bs-toggle="modal" data-bs-target="#modal9">
+                        <img class="img-card img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                        <p class="custom-legenda-galeria">Cleitinho</p>
+                    </button>
+
+                    <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header custom-modal-header">
+                                    <h5 class="modal-title custom-modal-titulo-galeria" id="modal1Label">Gatinho Resgatado - Cleitinho</h5>
+                                    <button type="button" class="btn-close" id="custom-btn-galeria" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="custom-modal-body">
+                                    <img class="modal-img img-fluid" src="../assets/images/img-galeria01.jpeg" alt="">
+                                </div>
+                                <div class="modal-legenda">
+                                    <p class="custom-modal-legenda">Cleitinho foi encontrado em um estacionamento de uma das nossas unidades! A equipe resgatou ele e hoje ele faz parte da família.</p>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +280,6 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="container py-4 py-lg-5">
             <div class="row justify-content-center">
@@ -326,11 +343,12 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="../javascript/bs-init.js"></script>
     <script src="../javascript/Simple-Slider-swiper-bundle.min.js"></script>
     <script src="../javascript/Simple-Slider.js"></script>
-</body>
 
+</body>
 </html>
