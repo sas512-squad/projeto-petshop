@@ -1,1 +1,209 @@
-/* Obsoleto por enquanto */
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d5ef96;
+}
+
+.custom-navbar {
+    --bs-bg-opacity: 1;
+    background-color: #d5ef96;
+    flex-grow: 1;
+}
+
+.custom-container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.custom-toggler-navbar {
+    margin: 0px 0px px 0;
+    flex-grow: 1;
+}
+
+.custom-brand {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0px;
+    padding: 0px;
+    /* border: red solid 1px; */
+}
+
+.custom-img-navbar {
+    width: 100px;
+    height: 100px;
+}
+
+.custom-input-group {
+    margin: 0.75rem 0 0;
+}
+
+.custom-ul-navbar {
+    margin: 0.75rem 0 0;
+}
+
+.custom-button-navbar {
+    display: inline;
+    background: transparent;
+    border-style: none;
+}
+
+.custom-svg-navbar {
+    
+    width: 1.5rem;
+    height: 1.5rem;
+    color: black;
+}
+
+.custom-collapse-navbar {
+    display: flex;
+}
+
+/* * 0. Telas grandes (desktops e laptops maiores) */
+@media (min-width: 1200px) {
+    .custom-navbar {
+        background-color: #d5ef96;
+    }
+
+    .custom-img-navbar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .custom-input-group {
+        margin: 1rem 0;
+        width: 50%;
+    }
+
+    .custom-ul-navbar {
+        font-size: 1.1rem;
+    }
+}
+
+/* * 1. Apenas para o carrinho */
+@media (min-width: 768px) {
+    .custom-button-navbar {
+        order: 7;
+    }
+    
+}
+
+/*  * 1. Telas médias (laptops e tablets maiores) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .custom-navbar {
+        padding: 1rem;
+        background-color: #d5ef96;
+    }
+
+    .custom-img-navbar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .custom-toggler-navbar {
+        margin: 0 0 40px 0;
+    }
+
+    .custom-ul-navbar {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .custom-input-group {
+        width: 70%;
+        margin: 0.5rem 0;
+    }
+}
+
+/*  * 2. Telas pequenas (smartphones maiores e tablets menores) */
+@media (max-width: 767px) {
+    .custom-navbar {
+        padding: 0.5rem;
+        background-color: #d5ef96;
+    }
+
+    .custom-img-navbar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .custom-toggler-navbar {
+        margin: 0;
+        flex-grow: 0;
+    }
+
+    .custom-ul-navbar {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .custom-input-group {
+        width: 100%;
+    }
+
+    .custom-button-navbar {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+/*  * 3. Telas muito pequenas (smartphones menores) */
+@media (max-width: 480px) {
+    .custom-navbar {
+        padding: 0.25rem;
+        background-color: #d5ef96;
+    }
+
+    .custom-img-navbar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .custom-toggler-navbar {
+        margin-bottom: 20px;
+    }
+
+    .custom-ul-navbar {
+        font-size: 0.8rem;
+    }
+
+    .custom-input-group {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    .custom-button-navbar {
+        font-size: 0.8rem;
+    }
+}
+
+/*  * 4. Telas muito grandes (ultra wide, telas grandes de alta resolução) */
+@media (min-width: 1600px) {
+    .custom-navbar {
+        padding: 2rem;
+        background-color: #d5ef96;
+    }
+
+    .custom-img-navbar {
+        width: 180px;
+        height: 180px;
+    }
+
+    .custom-ul-navbar {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    .custom-input-group {
+        width: 60%;
+    }
+}

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="../css/Footer-Multi-Column-icons.css">
-    <link rel="stylesheet" href="../css/Hero-Carousel-images.css">
+    <link rel="stylesheet" href="../css/styleIndex.css">
     <link rel="stylesheet" href="../css/Navbar-Centered-Brand-Dark-icons.css">
     <link rel="stylesheet" href="../css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/Simple-Slider.css">
@@ -17,24 +17,27 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md sticky-top d-flex py-5 custom-navbar">
-            <div class="container">
-                <button data-bs-toggle="collapse" class="navbar-toggler border-0 custom-toggler-navbar" data-bs-target="#navcol-2">
+    <header class="custom-header">
+        <nav class="custom-navbar navbar navbar-expand-md sticky-top d-flex py-5">
+            <div class="custom-container container">
+                <button data-bs-toggle="collapse" class="custom-toggler-navbar navbar-toggler border-0" data-bs-target="#navcol-2">
                     <span class="visually-hidden">Toggle navigation</span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <span class="bs-icon-sm d-flex justify-content-center align-items-center me-2 bs-icon">
-                        <img class="img-fluid img-navbar" src="../assets/images/pma-logo.png"/>
-                    </span>
-                    <span class="d-flex title-navbar">Petshop Melhor Amigo</span>
+                <a class="custom-brand navbar-brand d-flex align-items-center" href="index.html">
+                    <img class="custom-img-navbar img-navbar" src="../assets/images/pma-logo.webp"/>
                 </a>
-                <div class="input-group custom-input-group">
+                <button class="custom-button-navbar btn btn-success" type="button">
+                    <svg class="custom-svg-navbar bi bi-cart3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
+                        </path>
+                    </svg>
+                </button>
+                <div class="custom-input-group input-group">
                     <input class="border rounded-pill form-control" type="text" placeholder="O que seu pet precisa?" autocomplete="on" data-bs-theme="light">
                 </div>
-                <div class="collapse navbar-collapse" id="navcol-2">
-                    <ul class="navbar-nav links-navbar">
+                <div class="collapse navbar-collapse custom-collapse-navbar" id="navcol-2">
+                    <ul class="custom-ul-navbar navbar-nav links-navbar">
                         <li class="nav-item"><a class="nav-link active fw-semibold" href="produtos.html">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link fw-semibold" href="galeria.html">Galeria</a></li>
                         <li class="nav-item"><a class="nav-link fw-semibold" href="contato.html">Contato</a></li>
@@ -56,6 +59,63 @@
         </div>
     </section>
     <main>
+        <section>
+            <div class="d-grid d-md-flex justify-content-center align-items-center align-content-center"><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-1" style="width: 15rem;margin: 1rem;padding: 0;height: 5rem;color: black;background: rgb(238,238,238);border-style: none;font-weight: bold;text-align: center;box-shadow: 0.1rem 0.1rem 0rem 0px #d5ef96;">Tosa e Banho</button><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-2" style="width: 15rem;margin: 1rem;padding: 0;height: 5rem;color: black;background: rgb(238,238,238);border-style: none;font-weight: bold;text-align: center;box-shadow: 0.1rem 0.1rem 0rem 0px #d5ef96;">Rações</button><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-3" style="width: 15rem;margin: 1rem;padding: 0;height: 5rem;color: black;background: rgb(238,238,238);border-style: none;font-weight: bold;text-align: center;box-shadow: 0.1rem 0.1rem 0rem 0px #d5ef96;">Socialização Animal</button><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-4" style="width: 15rem;margin: 1rem;padding: 0;height: 5rem;color: black;background: rgb(238,238,238);border-style: none;font-weight: bold;text-align: center;box-shadow: 0.1rem 0.1rem 0rem 0px #d5ef96;">Hotel Pet</button>
+                <div id="modal-1" class="modal fade bg-dark bg-opacity-10" role="dialog" tabindex="-1" title="Modal" style="color: black;border-radius: 0px;">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-start" style="background: white;">
+                                <h5 class="modal-title">Tosa e Banho</h5><button class="btn-close btn-close-white" type="button" aria-label="Close" data-bs-dismiss="modal" style="color: black;"></button><i class="icon-close"></i>
+                            </div>
+                            <div class="modal-body" style="background: white;">
+                                <p><br /><br /><br /><br /><span style="color: rgb(116, 116, 116);">-</span> Com uma equipe dedicada e apaixonada por animais, nossos profissionais treinados estão prontos para oferecer os melhores cuidados para o seu pet.<br /><br />- Desde serviços de tosa profissional, onde deixaremos seu animalzinho com um visual impecável, até a limpeza e higienização completa.<br /><br />- Proporcionamos um ambiente seguro e tranquilo para que seu amigo se sinta confortável durante todo o processo.<br /><br /></p>
+                            </div>
+                            <div class="modal-footer" style="background: white;"><button class="btn btn-dark" type="button" data-bs-dismiss="modal" style="color: white;">Entendi</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-2" class="modal fade bg-dark bg-opacity-10" role="dialog" tabindex="-1" title="Modal" style="color: black;border-radius: 0px;">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-start" style="background: white;">
+                                <h5 class="modal-title">Rações</h5><button class="btn-close btn-close-white" type="button" aria-label="Close" data-bs-dismiss="modal" style="color: black;"></button><i class="icon-close"></i>
+                            </div>
+                            <div class="modal-body" style="background: white;">
+                                <p><br /><span style="color: rgb(116, 116, 116);">- </span>Sabemos que a alimentação é fundamental para a saúde do seu pet, por isso oferecemos uma ampla variedade de rações de alta qualidade e alimentos balanceados, adaptados às necessidades individuais de cada animal.<br /><br />- Nossos especialistas estão disponíveis para fornecer orientação personalizada e ajudá-lo a escolher a melhor opção para o seu amiguinho</p>
+                            </div>
+                            <div class="modal-footer" style="background: white;"><button class="btn btn-dark" type="button" data-bs-dismiss="modal" style="color: white;">Entendi</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-3" class="modal fade bg-dark bg-opacity-10" role="dialog" tabindex="-1" title="Modal" style="color: black;border-radius: 0px;">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-start" style="background: white;">
+                                <h5 class="modal-title">Socialização Animal</h5><button class="btn-close btn-close-white" type="button" aria-label="Close" data-bs-dismiss="modal" style="color: black;"></button><i class="icon-close"></i>
+                            </div>
+                            <div class="modal-body" style="background: white;">
+                                <p><br /><br /><span style="color: rgb(116, 116, 116);">- </span>No Petshop &quot;Melhor Amigo&quot;, também acreditamos na importância da socialização e diversão para o bem-estar dos animais. Por isso, oferecemos momentos especiais de brincadeiras e interação em nosso espaço dedicado, garantindo que seu pet se divirta e faça novos amigos. Além disso, temos uma ampla variedade de brinquedos e acessórios para enriquecer a vida do seu animalzinho.</p>
+                            </div>
+                            <div class="modal-footer" style="background: white;"><button class="btn btn-dark" type="button" data-bs-dismiss="modal" style="color: white;">Entendi</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-4" class="modal fade bg-dark bg-opacity-10" role="dialog" tabindex="-1" title="Modal" style="color: black;border-radius: 0px;">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-start" style="background: white;">
+                                <h5 class="modal-title">Vacinação</h5><button class="btn-close btn-close-white" type="button" aria-label="Close" data-bs-dismiss="modal" style="color: black;"></button><i class="icon-close"></i>
+                            </div>
+                            <div class="modal-body" style="background: white;">
+                                <p><span style="color: rgb(116, 116, 116);">- </span>Viaje tranquilo! Nosso Hotel Pet oferece segurança, conforto e cuidados 24h para o seu bichinho. Espaços amplos, supervisão profissional e recreação garantem que seu pet se divirta enquanto você está fora. Aqui, seu amigo é tratado como parte da família!</p>
+                            </div>
+                            <div class="modal-footer" style="background: white;"><button class="btn btn-dark" type="button" data-bs-dismiss="modal" style="color: white;">Entendi</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section class="py-4 py-xl-5">
             <div class="container">
                 <div class="text-dark border rounded border-1 border-dark shadow d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5 custom-bg-nl" data-aos="fade-left" data-aos-duration="400" data-aos-delay="100" data-bs-theme="light">
@@ -133,11 +193,11 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="../javascript/bs-init.js"></script>
     <script src="../javascript/Simple-Slider-swiper-bundle.min.js"></script>
     <script src="../javascript/Simple-Slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
