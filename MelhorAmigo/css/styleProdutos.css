@@ -52,8 +52,9 @@
   
   main {
     flex:1;
-    padding:20px;
-  }
+    padding-bottom: 100px;
+    background-color: #fff6e0;
+ }
   
   .models {
     display:none;
@@ -423,10 +424,6 @@
       display:flex;
     }
   
-    main {
-      padding-top:60px;
-    }
-  
     .menu-closer {
       display:block;
     }
@@ -677,4 +674,22 @@
   .filters button:hover {
     background-color: #16dd58;
     transform: scale(1.05);
+  }
+
+  .custom-banner-galeria {
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .custom-banner-div {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .my-5 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
   }
