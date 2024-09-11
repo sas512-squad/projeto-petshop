@@ -693,3 +693,49 @@
     margin-top: 0px !important;
     margin-bottom: 0px !important;
   }
+
+/* ! Não remover essa parte. É da configuração do banner. */
+
+  /* * 0. Telas grandes (desktops e laptops maiores) */
+@media (min-width: 1200px) {
+    
+  .custom-banner-produtos {
+    width: 90%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/*  * 1. Telas médias (laptops e tablets maiores) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  
+  .custom-banner-produtos {
+    width: 95%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/*  * 2. Telas pequenas (smartphones maiores e tablets menores) */
+@media (max-width: 767px) {
+  
+.custom-banner-produtos {
+  width: 100%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+}
+
+/*  * 3. Telas muito pequenas (smartphones menores) */
+@media (max-width: 480px) {
+  
+.custom-banner-produtos {
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+}
