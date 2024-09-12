@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="/css/Navbar-Centered-Brand-Dark-icons.css">
     <link rel="stylesheet" href="/css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/Simple-Slider.css">
-    <link rel="stylesheet" href="/css/swiper-icons.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1053bad4f5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
     <header class="custom-header">
-        <nav class="custom-navbar navbar navbar-expand-md sticky-top d-flex py-5">
+        <nav class="custom-navbar navbar navbar-expand-md sticky-top d-flex py-5 z-1">
             <div class="custom-container container">
                 <button data-bs-toggle="collapse" class="custom-toggler-navbar navbar-toggler border-0" data-bs-target="#navcol-2">
                     <span class="visually-hidden">Toggle navigation</span>
@@ -30,11 +31,12 @@
                 <a class="custom-brand navbar-brand d-flex align-items-center" href="/index">
                     <img class="custom-img-navbar img-navbar" src="/img/pma-logo.webp"/>
                 </a>
-                <button class="custom-button-navbar btn btn-success" type="button">
+                <button class="custom-button-navbar btn menu-openner" type="button">
                     <svg class="custom-svg-navbar bi bi-cart3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
                         </path>
                     </svg>
+                    <span id="span-contador"></span>
                 </button>
                 <div class="custom-input-group input-group">
                     <input class="border rounded-pill form-control" type="text" placeholder="O que seu pet precisa?" autocomplete="on" data-bs-theme="light">
@@ -50,14 +52,15 @@
         </nav>
     </header>
 
+
     <!-- Main Content -->
     <main class="flex-grow-1">
 
-        <div class="d-flex justify-content-center custom-banner-div">
+        <div class="d-flex justify-content-center custom-banner-div z-1">
             <img class="custom-banner-produtos" src="/img/img-banner-produtos.png" alt="banner da página produtos">
         </div>
 
-        <section class="container my-5 bg-light rounded-lg p-4 bg-color3">
+        <section class="container my-5 rounded-lg p-4">
             <!-- Rações e outros produtos -->
 
             <div class="filters">
@@ -104,60 +107,30 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <aside>
-        <div class="cart--area">
-            <div class="menu-closer">
-                <span class="material-icons">close</span>
-            </div>
-            <h1>Seus Produtos</h1>
-            <div class="cart"></div>
-            <div class="cart--details">
-                <div class="cart--totalitem subtotal">
-                    <span>Subtotal</span>
-                    <span>R$ --</span>
-                </div>
-                <div class="cart--totalitem desconto">
-                    <span id="desc-10">Desconto</span>
-                    <span>R$ --</span>
-                </div>
-                <div class="cart--totalitem total big">
-                    <span>Total</span>
-                    <span>R$ --</span>
-                </div>
-                <div class="cupom">
-                    <input type="text" id="cupom-input" placeholder="Digite seu cupom">
-                    <button id="btn-aplicar-cupom">Aplicar Cupom</button>
-                </div>
-                <div id="btn-finalizar-compra" class="cart--finalizar">Finalizar a compra</div>
-            </div>
-        </div>
-    </aside>
-
-    <div class="modelsWindowArea">
-        <div class="modelsWindowBody">
-            <!-- 
+        
+        <div class="modelsWindowArea">
+            <div class="modelsWindowBody z-3">
+                <!-- 
                     Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
                     da janela modal vai ser igual, logo vamos fazer uma função
-                -->
-            <div class="modelsInfo--cancelMobileButton">Voltar</div>
-            <div class="modelsBig">
-                <img src="" />
-            </div>
-
-            <div class="modelsInfo">
-                <h1>--</h1>
-                <div class="modelsInfo--desc">--</div>
-                <div class="modelsInfo--sizearea">
-                    <div class="modelsInfo--sector">Escala</div>
-                    <div class="modelsInfo--sizes">
-                        <div data-key="0" class="modelsInfo--size">Pequeno <span>--</span></div>
-                        <div data-key="1" class="modelsInfo--size">Médio <span>--</span></div>
-                        <div data-key="2" class="modelsInfo--size selected">Grande <span>--</span></div>
+                    -->
+                    <div class="modelsInfo--cancelMobileButton">Voltar</div>
+                    <div class="modelsBig">
+                        <img src="" />
                     </div>
-                </div>
-                <div class="modelsInfo--pricearea">
+                    
+                    <div class="modelsInfo">
+                        <h1>--</h1>
+                        <div class="modelsInfo--desc">--</div>
+                        <div class="modelsInfo--sizearea">
+                            <div class="modelsInfo--sector">Escala</div>
+                            <div class="modelsInfo--sizes">
+                                <div data-key="0" class="modelsInfo--size">Pequeno <span>--</span></div>
+                                <div data-key="1" class="modelsInfo--size">Médio <span>--</span></div>
+                                <div data-key="2" class="modelsInfo--size selected">Grande <span>--</span></div>
+                            </div>
+                        </div>
+                        <div class="modelsInfo--pricearea">
                     <div class="modelsInfo--sector">Preço</div>
                     <div class="modelsInfo--price">
                         <div class="modelsInfo--actualPrice">R$ --</div>
@@ -168,27 +141,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+                <div id="button-carrinho" class="modelsInfo--addButton">Adicionar ao carrinho</div>
                 <div class="modelsInfo--cancelButton">Cancelar</div>
             </div>
         </div>
     </div>
-
+    
     <section class="container mt-4">
-        <div class="row bg-light rounded-lg p-4 align-items-center">
+        <div class="row rounded-lg p-4 align-items-center">
             <div class="col-lg-6">
                 <h1 class="display-4 font-weight-bold text-color3 mb-3">Conheça nossos serviços</h1>
                 <p class="lead text-muted mb-4">No Petshop Melhor Amigo, oferecemos banhos relaxantes para cães e gatos,
                     Além Proporcionamos serviços profissionais de tosa para cães de todas as raças.</p>
-                <button class="btn btn-success btn-lg hover-bg-color1 btn-agendar">Agendar</button>
-            </div>
+                    <button class="btn btn-success btn-lg hover-bg-color1 btn-agendar">Agendar</button>
+                </div>
             <div class="col-lg-6 d-none d-md-block">
                 <img src="/img/banho2.jpeg" class="img-fluid imgR" alt="">
             </div>
         </div>
     </section>
-
-
+    
+    
     <div id="modalAgendamento" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -196,17 +169,17 @@
             <form id="agendamentoForm">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required>
-
+                
                 <label for="servico">Serviço:</label>
                 <select id="servico" name="servico" required>
                     <option value="banho">Banho</option>
                     <option value="tosa">Tosa</option>
                     <option value="banho_tosa">Banho e Tosa</option>
                 </select>
-
+                
                 <label for="data">Data:</label>
                 <input type="date" id="data" name="data" required>
-
+                
                 <label for="horario">Horário:</label>
                 <select id="horario" name="horario" required>
                     <option value="09:00">09:00</option>
@@ -215,26 +188,26 @@
                     <option value="14:00">14:00</option>
                     <option value="15:00">15:00</option>
                 </select>
-
+                
                 <button type="submit" id="submitForm">Confirmar Agendamento</button>
             </form>
         </div>
     </div>
-
+    
     <div id="confirmacaoEmail" class="confirmacao hidden">
         <h3>Agendamento Confirmado</h3>
         <p>Um e-mail de confirmação foi enviado para você.</p>
     </div>
-
-    <section class="container my-5 bg-light rounded-lg p-4">
+    
+    <section class="container my-5 rounded-lg p-4">
         <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Hora do Banho</h2>
         <div class="row">
             <div class="col-lg-6 mb-4">
                 <img src="/img/banho-e-tosa-04-1030x579.jpg" class="img-fluid rounded-lg shadow mb-3"
-                    alt="">
+                alt="">
                 <p class="text-muted">Utilizamos produtos de qualidade, seguros e adequados para cada tipo de pelagem,
                     garantindo uma limpeza profunda e refrescante.</p>
-            </div>
+                </div>
             <div class="col-lg-5 mb-4">
                 <img src="/img/dogFeliz.webp" class="img-fluid rounded-lg shadow mb-3" alt="">
                 <p class="text-muted">Nossos profissionais carinhosos proporcionam um ambiente tranquilo e seguro para
@@ -246,23 +219,53 @@
             <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
         </div>
     </section>
-
-    <section class="container my-5 bg-light rounded-lg p-4">
-        <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Ficou um gato Beethoven!</h2>
+    
+    <section class="container my-5 rounded-lg p-4">
+        <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Ficou um gato, Beethoven!</h2>
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4">
                 <img src="/img/Post_banho_e_tosa.jpg" class="img-fluid rounded-lg shadow" alt="">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 text-center">
                 <p class="lead text-muted mb-4">Nossos tosadores experientes e qualificados utilizam técnicas avançadas
                     para garantir que seu pet tenha um visual impecável. Além de cortes de pelos personalizados, também
                     realizamos higienização e cuidados especiais, como limpeza de ouvidos e corte de unhas, deixando seu
                     cãozinho limpo e bem cuidado.</p>
-                <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
+                    <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
+                </div>
             </div>
-        </div>
     </section>
+    
+</main>
 
+<aside class="custom-aside">
+    <div class="cart--area">
+        <div class="menu-closer">
+            <span class="material-icons">close</span>
+        </div>
+        <h1>Seus Produtos</h1>
+        <div class="cart"></div>
+        <div class="cart--details">
+            <div class="cart--totalitem subtotal">
+                <span>Subtotal</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem desconto">
+                <span id="desc-10">Desconto</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem total big">
+                <span>Total</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cupom">
+                <input type="text" id="cupom-input" placeholder="Digite seu cupom">
+                <button id="btn-aplicar-cupom">Aplicar Cupom</button>
+            </div>
+            <div id="btn-finalizar-compra" class="cart--finalizar">Finalizar a compra</div>
+        </div>
+    </div>
+</aside>
     <footer>
         <div class="container py-4 py-lg-5">
             <div class="row justify-content-center">
@@ -273,27 +276,27 @@
                                 href="#">Sobre o Melhor Amigo</a></li>
                         <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
                                 href="#">Trabalhe Conosco</a></li>
-                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
-                                href="#">Canal de Denúncias</a></li>
-                    </ul>
+                                <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                    href="#">Canal de Denúncias</a></li>
+                                </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
                     <h3 class="fs-6">Aqui Você Encontra</h3>
                     <ul class="list-unstyled">
                         <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
-                                href="#">Como Comprar</a></li>
+                            href="#">Como Comprar</a></li>
                         <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
-                                href="#">Clube Melhor Amigo</a></li>
-                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                            href="#">Clube Melhor Amigo</a></li>
+                            <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
                                 href="#">Nossos Diferenciais</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-                    <h3 class="fs-6">Nossas Políticas</h3>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                            <h3 class="fs-6">Nossas Políticas</h3>
                     <ul class="list-unstyled">
                         <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
-                                href="#">Entrega e Frete</a></li>
-                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                            href="#">Entrega e Frete</a></li>
+                            <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
                                 href="#">Pagamento e Reembolso</a></li>
                         <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
                                 href="#">Política de Privacidade</a></li>

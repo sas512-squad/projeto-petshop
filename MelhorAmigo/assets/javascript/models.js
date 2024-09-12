@@ -9,7 +9,7 @@ let modelsJson = [
 
     {id:5, name:'Ração N&D Grain Free', img:"/img/RN&DGrainFree.jpg", price:[180.40, 250.60, 470.90], sizes:['3kg', '5kg', '10kg'], description:'Ração N&D Grain Free para Cães Filhotes de Raças Grandes sabor Frango e Romã', category: 'ração'},
 
-    {id:6, name:'Brinquedo Macaco Petz', img:"../assets/images/img-produto04.jpg", price:[15.90, 25.00, 30.99], sizes:[' ', ' ', ' '], description:' ', category: 'brinquedo'},
+    {id:6, name:'Brinquedo Macaco Petz', img:"/img/img-produto04.jpg", price:[15.90, 25.00, 30.99], sizes:[' ', ' ', ' '], description:' ', category: 'brinquedo'},
 
     {id:7, name:'Brinquedo Líder Pet Bola Cravo para Cães', img:"/img/Brinquedo1.jpg", price:[10.00, 22.00, 42.90], sizes:['x3', 'x8', 'x12'], description:'Cores Sortidas', category: 'brinquedo'},
 
