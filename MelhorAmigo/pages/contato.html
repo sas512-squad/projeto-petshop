@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="/css/Navbar-Centered-Brand-Dark-icons.css">
     <link rel="stylesheet" href="/css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/Simple-Slider.css">
-    <link rel="stylesheet" href="/css/swiper-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +30,7 @@
                 <a class="custom-brand navbar-brand d-flex align-items-center" href="/index">
                     <img class="custom-img-navbar img-navbar" src="/img/pma-logo.webp"/>
                 </a>
-                <button class="custom-button-navbar btn btn-success" type="button">
+                <button class="custom-button-navbar btn menu-openner" type="button">
                     <svg class="custom-svg-navbar bi bi-cart3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
                         </path>
@@ -53,7 +55,6 @@
         <div class="d-flex justify-content-center custom-banner-div">
             <img class="custom-banner-contato" src="/img/img-banner-contato.png" alt="banner da página contatos">
         </div>
-
         
         <section class="text-custom-green py-5">
             <div class="container">
@@ -67,6 +68,10 @@
                                     <label for="name" class="form-label text-muted">Nome</label>
                                     <input type="text" class="form-control" id="name" name="name" required>
                                 </div>
+                                <!-- <div class="col-md-6 mb-3">
+                                    <label for="telephone" class="form-label text-muted">Telefone</label>
+                                    <input type="tel" class="form-control" id="telephone" name="telephone" required pattern="[0-9]{10,15}" title="Digite um número de telefone válido. Exemplo: 11999999999">
+                                </div> -->
                                 <div class="col-md-6 mb-3">
                                     <label for="email" class="form-label text-muted">E-mail</label>
                                     <input type="email" class="form-control" id="email" name="email" required>
@@ -76,8 +81,8 @@
                                 <label for="message" class="form-label text-muted">Mensagem</label>
                                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-success">Enviar</button>
-                        </form>
+                            <button type="submit" class="btn btn-success">Send</button>
+                        </form> 
                     </div>
                 </div>
             </div>
@@ -92,10 +97,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="position-relative border border-custom-green rounded overflow-hidden" style="height: 400px;">
-                            <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=pt&q=Petshop%20Location&ie=UTF8&t=&z=14&iwloc=B&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=pt&q=ruajoãojosérescala,326,vivendasdoimbui%20Location&ie=UTF8&t=&z=14&iwloc=B&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded shadow-sm">
-                                <h3 class="h6 text-dark mb-1">ENDEREÇO</h3>
-                                <p class="mb-0 small">Rua Exemplo, 123, Bairro, Cidade, Estado</p>
+                                <h3 class="h6 text-dark mb-1">Petshop Melhor Amigo</h3>
+                                <p class="mb-0 small">Rua João José Rescala, 326, Imbuí, Salvador, Bahia</p>
                             </div>
                         </div>
                     </div>

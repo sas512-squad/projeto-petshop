@@ -9,10 +9,11 @@ CREATE TABLE inscritos (
 );
 
 CREATE TABLE contato (
-    id_mensagem INT AUTO_INCREMENT PRIMARY KEY,
-    nome_cliente VARCHAR(255),
-    email_cliente VARCHAR(255),
-    mensagem VARCHAR(1000)
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_cliente VARCHAR (255) NOT NULL,
+    telefone_cliente VARCHAR (20) NOT NULL,
+    email_cliente VARCHAR (255) NOT NULL,
+    mensagem VARCHAR (1000) NOT NULL
 );
 
 SELECT * FROM inscritos;

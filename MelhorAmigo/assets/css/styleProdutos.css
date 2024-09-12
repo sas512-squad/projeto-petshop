@@ -13,13 +13,7 @@
     background-color: #16a34a;
 }
 
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
-  } */
-  
+ 
   .imgR{
     border-radius: 0 100px 100px 100px;
   }
@@ -33,10 +27,9 @@
   }
   
   /* ------------------------- */
-  aside {
+  .custom-aside {
     background-color:#88e254;
     width:100%;
-    font-family:'Hepta Slab', Helvetica, Arial;
     transition:all ease .2s;
     overflow-x:hidden;
     position: fixed;
@@ -60,18 +53,23 @@
     display:none;
   }
   
-  .menu-openner {
-    margin: 0 15px 0 10px;
-    font-size: 20px;
-    background-color: #ffffff;
-    padding: 5px 20px;
-    border-radius: 80px;
-    cursor: pointer;
-  }
+.custom-contador {
+  position: relative;
+  top: -38px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 15.625rem;
+  z-index: 3;
+  background: red;
+  color: white;
+}  
   
-  .menu-openner span {
-    margin-right:10px;
-  }
   .models-div{
     display: flex;
     align-items: center;
@@ -104,7 +102,6 @@
   .models-item {
     text-align: center;
     max-width:250px;
-    font-family:'Hepta Slab', Helvetica, Arial;
     margin:0 auto 50px auto;
   }
   
@@ -187,7 +184,6 @@
   
   .modelsInfo {
     flex:1;
-    font-family:'Hepta Slab', Helvetica, Arial;
     padding-bottom:50px;
   }
   
@@ -199,7 +195,6 @@
     font-size:16px;
     color:#999;
     margin-top:10px;
-    font-family:'Lato',Helvetica,Arial;
   }
   
   .modelsInfo--sector {
@@ -653,28 +648,29 @@
   }
   
   /* ------------------------- */
-  .filters {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
+.filters {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+  gap: 10px; /* Espaçamento opcional entre os botões */
+  margin: 0 0 5rem 0;
+}
   
-  .filters button {
-    padding: 12px 20px;
-    margin: 0 5px;
-    border: none;
-    border-radius: 25px;
-    background-color: #289640;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
+.filters button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #d5ef96;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.1s;
+}
   
-  .filters button:hover {
-    background-color: #16dd58;
-    transform: scale(1.05);
-  }
+.filters button:hover {
+  background-color: #a6c364;
+  transform: scale(1.02);
+  transition: ease-in-out 0.3s;
+}
 
   .custom-banner-galeria {
     width: 100%;

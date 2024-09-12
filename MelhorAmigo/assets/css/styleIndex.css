@@ -53,8 +53,9 @@
 
 .custom-button-navbar {
     display: inline;
-    background: transparent;
+    background: none;
     border-style: none;
+    
 }
 
 .custom-svg-navbar {
@@ -207,3 +208,9 @@
         width: 60%;
     }
 }
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
