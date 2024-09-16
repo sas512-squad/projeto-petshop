@@ -41,7 +41,8 @@
                 </div>
                 <div class="collapse navbar-collapse custom-collapse-navbar" id="navcol-2">
                     <ul class="custom-ul-navbar navbar-nav links-navbar">
-                        <li class="nav-item"><a class="nav-link active fw-semibold" href="/produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="/index">Início</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="/produtos">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link fw-semibold" href="/galeria">Galeria</a></li>
                         <li class="nav-item"><a class="nav-link fw-semibold" href="/contato">Contato</a></li>
                     </ul>
@@ -59,7 +60,7 @@
         <section class="text-custom-green py-5">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-8">
+                    <div class="col-lg-6 col-md-8 custom-contato">
                         <h2 class="text-dark mb-1">Entre em Contato</h2>
                         <p class="text-muted mb-4">Preencha o formulário abaixo para entrar em contato conosco.</p>
                         <form id="contactForm" class="custom-form">
@@ -81,7 +82,9 @@
                                 <label for="message" class="form-label text-muted">Mensagem</label>
                                 <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Como podemos te ajudar hoje? :) Se você realizou alguma compra em nosso site, não esqueça de incluir o NÚMERO DO SEU PEDIDO para agilizar o atendimento!"></textarea>
                             </div>
-                            <button type="submit" class="custom-button-contato">Enviar</button>
+                            <div class="custom-button-interno">
+                                <button type="submit" class="custom-button-contato"><strong>Enviar</strong></button>
+                            </div>
                         </form> 
                     </div>
                 </div>
@@ -94,10 +97,10 @@
                     <h2 class="text-dark">Nossa Localização</h2>
                     <p class="text-muted">Encontre-nos no mapa abaixo e venha nos visitar!</p>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center custom-map-div">
                     <div class="col-lg-8">
-                        <div class="position-relative border border-custom-green rounded overflow-hidden" style="height: 400px;">
-                            <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=pt&q=ruajoãojosérescala,326,vivendasdoimbui%20Location&ie=UTF8&t=&z=14&iwloc=B&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="position-relative border border-custom-green rounded overflow-hidden">
+                            <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=pt&q=ruajoãojosérescala,326,vivendasdoimbui%20Location&ie=UTF8&t=&z=14&iwloc=B&output=embed" allowfullscreen="" loading="lazy" class="custom-map"></iframe>
                             <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded shadow-sm">
                                 <h3 class="h6 text-dark mb-1">Petshop Melhor Amigo</h3>
                                 <p class="mb-0 small">Rua João José Rescala, 326, Imbuí, Salvador, Bahia</p>
@@ -107,6 +110,21 @@
                 </div>
             </div>
         </section>
+
+        <section class="py-4 py-xl-5"></section>
+            <div class="container">
+                <div class="text-dark border rounded border-1 border-dark shadow d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5 custom-bg-nl" data-aos="fade-left" data-aos-duration="400" data-aos-delay="100" data-bs-theme="light">
+                    <div class="text-center text-lg-start py-3 py-lg-1">
+                        <h2 class="fs-6 fw-bold text-start mb-2 custom-text-nl">Cadastre-se e receba nossas promoções e novidades antes de todo mundo.</h2>
+                    </div>
+                    <form id="myForm" class="d-flex justify-content-center flex-wrap my-2" method="post">
+                        <div class="my-2"><input class="border rounded border-1 border-dark form-control" type="email" name="email" placeholder="Seu e-mail" required></div>
+                        <div class="my-2"><button class="btn border rounded border-1 border-dark ms-sm-2 custom-text-nl" type="submit">Inscrever</button></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
         
         <footer>
@@ -178,6 +196,8 @@
     <script src="/javascript/Simple-Slider-swiper-bundle.min.js"></script>
     <script src="/javascript/Simple-Slider.js"></script>
     <script src="/javascript/scriptContato.js"></script>
+    <script src="/javascript/scriptPrincipal.js"></script>
+    <script src="/javascript/scriptPrincipal.js"></script>
 </body>
 
 </html>

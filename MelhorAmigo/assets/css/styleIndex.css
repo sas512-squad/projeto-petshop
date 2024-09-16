@@ -35,7 +35,6 @@
     flex-grow: 1;
     margin: 0px;
     padding: 0px;
-    /* border: red solid 1px; */
 }
 
 .custom-img-navbar {
@@ -55,17 +54,19 @@
     display: inline;
     background: none;
     border-style: none;
-    
 }
 
 .custom-svg-navbar {
-    
     width: 1.5rem;
     height: 1.5rem;
     color: black;
 }
 
 .custom-collapse-navbar {
+    display: flex;
+}
+
+.nav-item {
     display: flex;
 }
 
@@ -213,4 +214,3 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
-

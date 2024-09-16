@@ -21,29 +21,26 @@ main {
   background-color: #16a34a;
 }
 
-.isso {
-  border: none;
-}
-
 .img-card {
   height: 20rem;
-  width: 100%; /* Adiciona largura completa para manter a proporção */
+  width: 100%;
 }
 
 .modal-img {
   height: 60vmin;
   width: 60vmin;
-  object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
+  background-color: #fff6e0;
+  object-fit: cover; 
 }
 
 .modal-body {
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
 }
 
 .modal-body p {
-  max-width: 60vmin; /* Limita a largura máxima do parágrafo para o tamanho da imagem */
-  margin: 10px auto; /* Adiciona uma margem automática para centralizar o texto */
-  text-align: justify; /* Justifica o texto para melhor aparência */
+  max-width: 60vmin;
+  margin: 10px auto;
+  text-align: justify;
   overflow-wrap: break-word;
 }
 
@@ -52,7 +49,6 @@ main {
   height: auto;
 }
 
-/* SUPERIOR DIREITA INFERIOR ESQUERDA */
 .modal-img {
   width: 100%;
   height: auto;
@@ -68,6 +64,7 @@ main {
 }
 
 .custom-banner-div {
+  background-color: #fff6e0;
   position: sticky;
   top: 0;
   transition: 1s;
@@ -110,7 +107,6 @@ main {
   padding: 1rem 1rem 0px 1rem;
 }
 
-/* SUPERIOR DIREITA INFERIOR ESQUERDA */
 .custom-modal-legenda {
   margin: 0rem 1rem 1rem;
   text-align: center;
@@ -126,7 +122,7 @@ main {
 @media (min-width: 1200px) {
     
     .custom-banner-galeria {
-      width: 90%;
+      width: 60%;
       display: block;
       margin: 0px;
       padding: 0px;
@@ -137,7 +133,7 @@ main {
 @media (min-width: 768px) and (max-width: 1199px) {
     
     .custom-banner-galeria {
-      width: 95%;
+      width: 60%;
       display: block;
       margin: 0px;
       padding: 0px;
