@@ -13,6 +13,31 @@ main {
     border-color: #16a34a;
 }
 
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.custom-button-contato {
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #d5ef96;
+  border: none;
+  border-radius: 1rem;
+  color: black;
+  text-transform: none;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+.custom-button-contato:hover {
+  background-color: #a6c364;
+  transform: scale(1.02);
+  transition: ease-in-out 0.3s;
+}
+
 /* * 0. Telas grandes (desktops e laptops maiores) */
 @media (min-width: 1200px) {
     
