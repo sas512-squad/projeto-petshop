@@ -4,13 +4,13 @@ let modalQt = 0; // Quantidade inicial dos produtos
 let key = 0; // Chave individual do produto
 
 // Constante para carregar estrutura, limpando o código
-const c = (el) => document.querySelector(el); // Para localizar o primeiro item
-const cs = (el) => document.querySelectorAll(el); // Para localizar todos os itens
+const loadingFirstItem = (el) => document.querySelector(el); // Para localizar o primeiro item
+const loadingAllItens = (el) => document.querySelectorAll(el); // Para localizar todos os itens
 
 //Mapear os dados recebidos via Json
 //Criando a lista de produtos, modelos
 modelsJson.map((item, index) => {
-    let modelsItem = c('.models .models-item').cloneNode(true);
+    let modelsItem = loadingFirstItem('.models .models-item').cloneNode(true);
     modelsItem.setAttribute('data-key', index);
     modelsItem.querySelector('.models-item--img img').src = item.img;
     modelsItem.querySelector('.models-item--price').innerHTML = `R$ ${item.price[0].toFixed(2)}`;
@@ -20,63 +20,63 @@ modelsJson.map((item, index) => {
         e.preventDefault();
         key = e.target.closest('.models-item').getAttribute('data-key');
         modalQt = 1;
-        c('.modelsBig img').src = modelsJson[key].img;
-        c('.modelsInfo h1').innerHTML = modelsJson[key].name;
-        c('.modelsInfo--desc').innerHTML = modelsJson[key].description;
-        c('.modelsInfo--size.selected').classList.remove('selected');
-        cs('.modelsInfo--size').forEach((size, sizeIndex) => {
+        loadingFirstItem('.modelsBig img').src = modelsJson[key].img;
+        loadingFirstItem('.modelsInfo h1').innerHTML = modelsJson[key].name;
+        loadingFirstItem('.modelsInfo--desc').innerHTML = modelsJson[key].description;
+        loadingFirstItem('.modelsInfo--size.selected').classList.remove('selected');
+        loadingAllItens('.modelsInfo--size').forEach((size, sizeIndex) => {
             if (sizeIndex == 2) {
                 size.classList.add('selected');
-                c('.modelsInfo--actualPrice').innerHTML = `R$ ${modelsJson[key].price[sizeIndex].toFixed(2)}`;
+                loadingFirstItem('.modelsInfo--actualPrice').innerHTML = `R$ ${modelsJson[key].price[sizeIndex].toFixed(2)}`;
             }
             size.querySelector('span').innerHTML = modelsJson[key].sizes[sizeIndex];
         });
-        c('.modelsInfo--qt').innerHTML = modalQt;
-        c('.modelsWindowArea').style.opacity = 0;
-        c('.modelsWindowArea').style.display = 'flex';
+        loadingFirstItem('.modelsInfo--qt').innerHTML = modalQt;
+        loadingFirstItem('.modelsWindowArea').style.opacity = 0;
+        loadingFirstItem('.modelsWindowArea').style.display = 'flex';
         setTimeout(() => {
-            c('.modelsWindowArea').style.opacity = 1;
+            loadingFirstItem('.modelsWindowArea').style.opacity = 1;
         }, 200);
     });
-    c('.models-area').append(modelsItem);
+    loadingFirstItem('.models-area').append(modelsItem);
 });
 
 //Ações do Modal - Janela
 function closeModal() {
-    c('.modelsWindowArea').style.opacity = 0;
+    loadingFirstItem('.modelsWindowArea').style.opacity = 0;
     setTimeout(() => {
-        c('.modelsWindowArea').style.display = 'none';
+        loadingFirstItem('.modelsWindowArea').style.display = 'none';
     }, 500);
 }
 
-cs('.modelsInfo--cancelButton, .modelsInfo--cancelMobileButton').forEach((item) => {
+loadingAllItens('.modelsInfo--cancelButton, .modelsInfo--cancelMobileButton').forEach((item) => {
     item.addEventListener('click', closeModal);
 });
 
-c('.modelsInfo--qtmenos').addEventListener('click', () => {
+loadingFirstItem('.modelsInfo--qtmenos').addEventListener('click', () => {
     if (modalQt > 1) {
         modalQt--;
-        c('.modelsInfo--qt').innerHTML = modalQt;
+        loadingFirstItem('.modelsInfo--qt').innerHTML = modalQt;
     }
 });
 
-c('.modelsInfo--qtmais').addEventListener('click', () => {
+loadingFirstItem('.modelsInfo--qtmais').addEventListener('click', () => {
     modalQt++;
-    c('.modelsInfo--qt').innerHTML = modalQt;
+    loadingFirstItem('.modelsInfo--qt').innerHTML = modalQt;
 });
 
-cs('.modelsInfo--size').forEach((size, sizeIndex) => {
+loadingAllItens('.modelsInfo--size').forEach((size, sizeIndex) => {
     size.addEventListener('click', (e) => {
-        c('.modelsInfo--size.selected').classList.remove('selected');
+        loadingFirstItem('.modelsInfo--size.selected').classList.remove('selected');
         size.classList.add('selected');
-        c('.modelsInfo--actualPrice').innerHTML = `R$ ${modelsJson[key].price[sizeIndex].toFixed(2)}`;
+        loadingFirstItem('.modelsInfo--actualPrice').innerHTML = `R$ ${modelsJson[key].price[sizeIndex].toFixed(2)}`;
     });
 });
 
 let isFirstClick = true;
 
-c('.modelsInfo--addButton').addEventListener('click', () => {
-    let size = parseInt(c('.modelsInfo--size.selected').getAttribute('data-key'));
+loadingFirstItem('.modelsInfo--addButton').addEventListener('click', () => {
+    let size = parseInt(loadingFirstItem('.modelsInfo--size.selected').getAttribute('data-key'));
     let identifier = modelsJson[key].id + '@' + size;
     let locaId = cart.findIndex((item) => item.identifier == identifier);
 
@@ -93,12 +93,12 @@ c('.modelsInfo--addButton').addEventListener('click', () => {
 
     // Verifica se o clique é o primeiro e se a largura da tela é maior que 768px
     if (isFirstClick && window.innerWidth > 768) {
-        c('aside').style.left = '50vw';
-        c('aside').style.width = '50vw';
+        loadingFirstItem('aside').style.left = '50vw';
+        loadingFirstItem('aside').style.width = '50vw';
         isFirstClick = false;
     }
 
-    c('.menu-openner span').classList.add('custom-contador');
+    loadingFirstItem('.menu-openner span').classList.add('custom-contador');
     updateCart();
     closeModal();
 });
@@ -113,35 +113,35 @@ window.addEventListener('click', (event) => {
 });
 
 // Ajustando para o mobile
-c('.menu-openner').addEventListener('click', () => {
+loadingFirstItem('.menu-openner').addEventListener('click', () => {
     if (cart.length > 0) {
-        c('aside').classList.add('show');
+        loadingFirstItem('aside').classList.add('show');
         
         // Verifica se a largura da tela é maior que 768px
         if (window.innerWidth < 768) {
-            c('aside').style.left = '0vw';
+            loadingFirstItem('aside').style.left = '0vw';
         } else if (window.innerWidth > 768) {
-            c('aside').style.left = '50vw';
+            loadingFirstItem('aside').style.left = '50vw';
         }
     }
 });
 
-c('.menu-closer').addEventListener('click', () => {
-    c('aside').style.left = '100vw';
+loadingFirstItem('.menu-closer').addEventListener('click', () => {
+    loadingFirstItem('aside').style.left = '100vw';
 });
 
 function updateCart() {
-    c('.menu-openner span').innerHTML = cart.length;
+    loadingFirstItem('.menu-openner span').innerHTML = cart.length;
     if (cart.length > 0) {
-        c('aside').classList.add('show');
-        c('.cart').innerHTML = '';
+        loadingFirstItem('aside').classList.add('show');
+        loadingFirstItem('.cart').innerHTML = '';
         let subtotal = 0;
         let desconto = 0;
         let total = 0;
         cart.map((itemCart, index) => {
             let modelItem = modelsJson.find((itemBD) => itemBD.id == itemCart.id);
             subtotal += modelItem.price[itemCart.size] * itemCart.qt;
-            let cartItem = c('.models .cart--item').cloneNode(true);
+            let cartItem = loadingFirstItem('.models .cart--item').cloneNode(true);
             let modelSizeName;
             switch (itemCart.size) {
                 case 0:
@@ -168,24 +168,24 @@ function updateCart() {
                 itemCart.qt++;
                 updateCart();
             });
-            c('.cart').append(cartItem);
+            loadingFirstItem('.cart').append(cartItem);
         });
         desconto = subtotal * 0.0;
         total = subtotal - desconto;
-        c('.subtotal span:last-child').innerHTML = `R$ ${subtotal.toFixed(2)}`;
-        c('.desconto span:last-child').innerHTML = `R$ ${desconto.toFixed(2)}`;
-        c('.total span:last-child').innerHTML = `R$ ${total.toFixed(2)}`;
+        loadingFirstItem('.subtotal span:last-child').innerHTML = `R$ ${subtotal.toFixed(2)}`;
+        loadingFirstItem('.desconto span:last-child').innerHTML = `R$ ${desconto.toFixed(2)}`;
+        loadingFirstItem('.total span:last-child').innerHTML = `R$ ${total.toFixed(2)}`;
     } else {
-        c('aside').classList.remove('show');
+        loadingFirstItem('aside').classList.remove('show');
     }
 }
 
 // FILTRO DE PRODUTOS
 function renderProducts(products) {
-    let modelsArea = c('.models-area');
+    let modelsArea = loadingFirstItem('.models-area');
     modelsArea.innerHTML = '';
     products.map((item, index) => {
-        let modelsItem = c('.models .models-item').cloneNode(true);
+        let modelsItem = loadingFirstItem('.models .models-item').cloneNode(true);
         modelsItem.setAttribute('data-key', index);
         modelsItem.querySelector('.models-item--img img').src = item.img;
         modelsItem.querySelector('.models-item--price').innerHTML = `R$ ${item.price[0].toFixed(2)}`;
@@ -195,22 +195,22 @@ function renderProducts(products) {
             e.preventDefault();
             key = index;
             modalQt = 1;
-            c('.modelsBig img').src = item.img;
-            c('.modelsInfo h1').innerHTML = item.name;
-            c('.modelsInfo--desc').innerHTML = item.description;
-            c('.modelsInfo--size.selected').classList.remove('selected');
-            cs('.modelsInfo--size').forEach((size, sizeIndex) => {
+            loadingFirstItem('.modelsBig img').src = item.img;
+            loadingFirstItem('.modelsInfo h1').innerHTML = item.name;
+            loadingFirstItem('.modelsInfo--desc').innerHTML = item.description;
+            loadingFirstItem('.modelsInfo--size.selected').classList.remove('selected');
+            loadingAllItens('.modelsInfo--size').forEach((size, sizeIndex) => {
                 if (sizeIndex === 2) {
                     size.classList.add('selected');
-                    c('.modelsInfo--actualPrice').innerHTML = `R$ ${item.price[sizeIndex].toFixed(2)}`;
+                    loadingFirstItem('.modelsInfo--actualPrice').innerHTML = `R$ ${item.price[sizeIndex].toFixed(2)}`;
                 }
                 size.querySelector('span').innerHTML = item.sizes[sizeIndex];
             });
-            c('.modelsInfo--qt').innerHTML = modalQt;
-            c('.modelsWindowArea').style.opacity = 0;
-            c('.modelsWindowArea').style.display = 'flex';
+            loadingFirstItem('.modelsInfo--qt').innerHTML = modalQt;
+            loadingFirstItem('.modelsWindowArea').style.opacity = 0;
+            loadingFirstItem('.modelsWindowArea').style.display = 'flex';
             setTimeout(() => {
-                c('.modelsWindowArea').style.opacity = 1;
+                loadingFirstItem('.modelsWindowArea').style.opacity = 1;
             }, 200);
 
         });
@@ -227,10 +227,10 @@ function filterProducts(category) {
     }
 }
 
-c('#filter-racao').addEventListener('click', () => filterProducts('ração'));
-c('#filter-brinquedo').addEventListener('click', () => filterProducts('brinquedo'));
-c('#filter-higiene').addEventListener('click', () => filterProducts('higiene'));
-c('#filter-all').addEventListener('click', () => filterProducts('all'));
+loadingFirstItem('#filter-racao').addEventListener('click', () => filterProducts('ração'));
+loadingFirstItem('#filter-brinquedo').addEventListener('click', () => filterProducts('brinquedo'));
+loadingFirstItem('#filter-higiene').addEventListener('click', () => filterProducts('higiene'));
+loadingFirstItem('#filter-all').addEventListener('click', () => filterProducts('all'));
 
 renderProducts(modelsJson);
 
@@ -264,9 +264,8 @@ document.getElementById("agendamentoForm").addEventListener("submit", function(e
     document.getElementById("confirmacaoEmail").classList.remove("hidden");
     
     setTimeout(function() {
-        document.getElementById("confirmacaoEmail").classList.add("hidden");
-        alert(`Agendamento confirmado!\nNome: ${nome}\nServiço: ${servico}\nData: ${data}\nHorário: ${horario}`);
-    }, 3000);
+        confirmacaoEmail.classList.add("hidden");
+        }, 2500);
 });
 
 // ADICIONAR CUPOM E FINALIZAR A COMPRA
@@ -278,7 +277,7 @@ document.getElementById('btn-finalizar-compra').addEventListener('click', () => 
 
 function aplicarCupom() {
     const cupomInput = document.getElementById('cupom-input');
-    const cupomCodigo = cupomInput.value.trim();
+    const cupomCodigo = cupomInput.value.trim().toLowerCase();
     
     if (cupomCodigo === 'trabalhotop10') {
         // Aplica o desconto de 10%
