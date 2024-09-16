@@ -14,7 +14,8 @@ connection.connect((err) => {
         console.error('Erro ao conectar ao MySQL:', err);
         return;
     }
-    console.log('Conectado ao MySQL!');
+    console.log('Conectado ao MySQL!')
+    console.log('Acesse: http://localhost:3000/index');
 });
 
 module.exports = connection;
