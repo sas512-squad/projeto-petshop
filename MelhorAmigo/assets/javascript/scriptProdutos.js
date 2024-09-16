@@ -1,10 +1,11 @@
-// ----------------------------------- CARRINHO DE COMPRAS 
-let cart = [];
-let modalQt = 0;
-let key = 0;
-//constante para carregar estrutura, limpando o código
-const c = (el) => document.querySelector(el); //para localizar o primeiro item
-const cs = (el) => document.querySelectorAll(el); //para localizar todos os itens
+// CARRINHO DE COMPRAS 
+let cart = []; // Array do carrinho de compras
+let modalQt = 0; // Quantidade inicial dos produtos
+let key = 0; // Chave individual do produto
+
+// Constante para carregar estrutura, limpando o código
+const c = (el) => document.querySelector(el); // Para localizar o primeiro item
+const cs = (el) => document.querySelectorAll(el); // Para localizar todos os itens
 
 //Mapear os dados recebidos via Json
 //Criando a lista de produtos, modelos
@@ -40,7 +41,7 @@ modelsJson.map((item, index) => {
     c('.models-area').append(modelsItem);
 });
 
-//Ações do Modal - janela
+//Ações do Modal - Janela
 function closeModal() {
     c('.modelsWindowArea').style.opacity = 0;
     setTimeout(() => {
@@ -111,7 +112,7 @@ window.addEventListener('click', (event) => {
     }
 });
 
-//ajustando o mobile
+// Ajustando para o mobile
 c('.menu-openner').addEventListener('click', () => {
     if (cart.length > 0) {
         c('aside').classList.add('show');
@@ -179,7 +180,7 @@ function updateCart() {
     }
 }
 
-// ----------------------------------- FILTRO DE PRODUTOS
+// FILTRO DE PRODUTOS
 function renderProducts(products) {
     let modelsArea = c('.models-area');
     modelsArea.innerHTML = '';
@@ -233,7 +234,7 @@ c('#filter-all').addEventListener('click', () => filterProducts('all'));
 
 renderProducts(modelsJson);
 
-// ----------------------------------- AGENDAMENTO
+// AGENDAMENTO
 document.querySelectorAll(".btn-agendar").forEach(button => {
     button.addEventListener("click", function() {
         document.getElementById("modalAgendamento").style.display = "flex";
@@ -268,7 +269,7 @@ document.getElementById("agendamentoForm").addEventListener("submit", function(e
     }, 3000);
 });
 
-// ----------------------------------- ADICIONAR CUPOM E FINALIZAR COMPRA
+// ADICIONAR CUPOM E FINALIZAR A COMPRA
 document.getElementById('btn-finalizar-compra').addEventListener('click', () => {
     alert('Compra realizada com sucesso!');
     cart = []; // Limpa o carrinho
