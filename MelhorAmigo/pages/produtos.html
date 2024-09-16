@@ -43,7 +43,8 @@
                 </div>
                 <div class="collapse navbar-collapse custom-collapse-navbar" id="navcol-2">
                     <ul class="custom-ul-navbar navbar-nav links-navbar">
-                        <li class="nav-item"><a class="nav-link active fw-semibold" href="/produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="/index">Início</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="/produtos">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link fw-semibold" href="/galeria">Galeria</a></li>
                         <li class="nav-item"><a class="nav-link fw-semibold" href="/contato">Contato</a></li>
                     </ul>
@@ -62,7 +63,7 @@
 
         <section class="container my-5 rounded-lg p-4">
             <!-- Rações e outros produtos -->
-
+            
             <div class="filters">
                 <button id="filter-racao">Rações</button>
                 <button id="filter-brinquedo">Brinquedos</button>
@@ -147,8 +148,9 @@
         </div>
     </div>
     
+    
     <section class="container mt-4">
-        <div class="row rounded-lg p-4 align-items-center">
+        <div class="row rounded-lg p-4 align-items-center custom-div-service">
             <div class="col-lg-6">
                 <h1 class="display-4 font-weight-bold text-color3 mb-3">Conheça nossos serviços</h1>
                 <p class="lead text-muted mb-4">No Petshop Melhor Amigo, oferecemos banhos relaxantes para cães e gatos,
@@ -158,10 +160,41 @@
             <div class="col-lg-6 d-none d-md-block">
                 <img src="/img/banho2.jpeg" class="img-fluid imgR" alt="">
             </div>
+            <div class="accordion custom-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="custom-button-flush accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <strong>Serviço de Tosa Especializada</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Proporcionamos serviços profissionais de tosa para cães de todas as raças. Nossos tosadores experientes e qualificados utilizam técnicas avançadas para garantir que seu pet tenha um visual impecável. Além de cortes de pelos personalizados, também realizamos higienização e cuidados especiais, como limpeza de ouvidos e corte de unhas, deixando seu cãozinho limpo e bem cuidado.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="custom-button-flush accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <strong>Banho Relaxante</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">No Petshop "Melhor Amigo", oferecemos banhos relaxantes para cães e gatos. Utilizamos produtos de qualidade, seguros e adequados para cada tipo de pelagem, garantindo uma limpeza profunda e refrescante. Nossos profissionais carinhosos proporcionam um ambiente tranquilo e seguro para que seu pet desfrute de um banho agradável, deixando-o com uma pelagem macia, brilhante e cheirosa.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="custom-button-flush accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <strong>Produtos de Higiene e Cuidados</strong>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Na nossa seleção de produtos, você encontrará uma gama de itens de higiene e cuidados para o seu pet. Isso inclui shampoos e condicionadores específicos para diferentes tipos de pelagem, escovas e pentes para manter os pelos desembaraçados e saudáveis, produtos de limpeza auricular e ocular, além de acessórios essenciais como coleiras, guias e comedouros. Tudo o que você precisa para manter seu animalzinho limpo, confortável e bem cuidado.</div>
+                  </div>
+                </div>
+              </div>
         </div>
     </section>
-    
-    
+
     <div id="modalAgendamento" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -201,22 +234,24 @@
     
     <section class="container my-5 rounded-lg p-4">
         <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Hora do Banho</h2>
-        <div class="row">
+        <div class="row custom-div-banho">
             <div class="col-lg-6 mb-4">
-                <img src="/img/banho-e-tosa-04-1030x579.jpg" class="img-fluid rounded-lg shadow mb-3"
+                <img src="/img/banho-e-tosa-04-1030x579.jpg" class="img-fluid rounded-lg mb-3 custom-img-tosa"
                 alt="">
                 <p class="text-muted">Utilizamos produtos de qualidade, seguros e adequados para cada tipo de pelagem,
                     garantindo uma limpeza profunda e refrescante.</p>
                 </div>
             <div class="col-lg-5 mb-4">
-                <img src="/img/dogFeliz.webp" class="img-fluid rounded-lg shadow mb-3" alt="">
+                <img src="/img/dogFeliz.webp" class="img-fluid rounded-lg mb-3 custom-img-tosa" alt="">
                 <p class="text-muted">Nossos profissionais carinhosos proporcionam um ambiente tranquilo e seguro para
                     que seu pet desfrute de um banho agradável, deixando-o com uma pelagem macia, brilhante e cheirosa.
                 </p>
             </div>
         </div>
         <div class="text-center">
-            <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
+            <a href="/contato">
+                <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
+            </a>
         </div>
     </section>
     
@@ -224,14 +259,16 @@
         <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Ficou um gato, Beethoven!</h2>
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4">
-                <img src="/img/Post_banho_e_tosa.jpg" class="img-fluid rounded-lg shadow" alt="">
+                <img src="/img/Post_banho_e_tosa.jpg" class="img-fluid rounded-lg custom-img-tosa" alt="imagem de um cachorro preto, com detalhes marrom e branco e uma tesoura">
             </div>
             <div class="col-lg-6 text-center">
                 <p class="lead text-muted mb-4">Nossos tosadores experientes e qualificados utilizam técnicas avançadas
                     para garantir que seu pet tenha um visual impecável. Além de cortes de pelos personalizados, também
                     realizamos higienização e cuidados especiais, como limpeza de ouvidos e corte de unhas, deixando seu
                     cãozinho limpo e bem cuidado.</p>
-                    <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
+                    <a href="/contato">
+                        <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
+                    </a>
                 </div>
             </div>
     </section>
@@ -259,8 +296,8 @@
                 <span>R$ --</span>
             </div>
             <div class="cupom">
-                <input type="text" id="cupom-input" placeholder="Digite seu cupom">
-                <button id="btn-aplicar-cupom">Aplicar Cupom</button>
+                <input class="custom-input-cupom" type="text" id="cupom-input" placeholder="Digite seu cupom">
+                <button id="btn-aplicar-cupom" class="custom-btn-cupom">Aplicar Cupom</button>
             </div>
             <div id="btn-finalizar-compra" class="cart--finalizar">Finalizar a compra</div>
         </div>
