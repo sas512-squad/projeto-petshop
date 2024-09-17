@@ -18,3 +18,9 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         alert('Erro ao cadastrar. Tente novamente.');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+	if ('AOS' in window) {
+		AOS.init();
+	}
+}, false);
