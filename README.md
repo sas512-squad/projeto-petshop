@@ -1,8 +1,10 @@
 # 🐾 Projeto Petshop - Melhor Amigo 🐾
 
-<p align="center"><img src="../projeto-petshop/MelhorAmigo/assets/img/pma-logo.webp" alt="Imagem do Logo do Site do Petshop" width="500"/></p>
+Este é o repositório do **Projeto Petshop - Melhor Amigo**, desenvolvido pela squad *SAS 512*. O objetivo deste projeto foi criar um website para o petshop. A aplicação simula um site real, com uma página principal, a página de produtos, a exibição de uma galeria de imagens e fornece página para contato.
 
-Este é o repositório do **Projeto Petshop - Melhor Amigo**, desenvolvido pela squad *sas512*. O objetivo deste projeto é criar uma aplicação web para gerenciar os serviços e produtos de um petshop. A aplicação permite o cadastro de pets, produtos, exibe uma galeria de imagens e fornece páginas para contato.
+---
+
+![Imagem do Site do Petshop](https://i.ibb.co/SfT7S7M/petshopmelhoramigo.png)
 
 ---
 
