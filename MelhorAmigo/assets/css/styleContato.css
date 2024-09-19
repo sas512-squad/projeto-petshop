@@ -6,9 +6,11 @@ main {
 .bg-custom-green {
     background-color: #16a34a;
 }
+
 .text-custom-green {
     color: #16a34a;
 }
+
 .border-custom-green {
     border-color: #16a34a;
 }
@@ -31,34 +33,33 @@ main {
   height: 3.125rem;
   font-size: 1rem;
   background-color: #d5ef96;
-  border: none;
   border-radius: 1rem;
-  color: #7878ff;
+  color: black;
   text-transform: none;
   box-sizing: border-box;
   transition: 0.1s;
 }
 
 .custom-button-contato:hover {
-  background-color: #a6c364;
+  background-color: #bef145;
   transform: scale(1.02);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out;
 }
 
 .custom-contato {
   padding: 40px;
+  border: 1px solid black;
   border-radius: 25px;
-  background-color: rgba(225, 236, 199, 0.5);
-
+  background-color: #d5ef96;
+  box-shadow: 0px 0px 100px #999;
 }
 
 .custom-map-div {
   padding: 10px;
-  /* border: 1px solid rgba(208, 255, 0); */
 }
 
 .custom-map {
-  border: 10px solid rgba(213, 239, 150, 0.6);
+  border: 10px solid #d5ef96;
   height: 500px;
   width: 100%;
 }

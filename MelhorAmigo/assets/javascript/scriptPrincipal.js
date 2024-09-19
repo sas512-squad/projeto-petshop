@@ -24,3 +24,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		AOS.init();
 	}
 }, false);
+
+// Botão Flutuante - Whatsapp //
+
+window.addEventListener('scroll', function() {
+    const whatsappButton = document.querySelector('.whatsapp-button');
+    const width = this.window.innerWidth
+    if (window.scrollY > 250) {
+        whatsappButton.style.visibility = 'visible';
+    } else {
+        whatsappButton.style.visibility = 'hidden';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const whatsappButton = document.querySelector('.whatsapp-button');
+    whatsappButton.style.visibility = 'hidden';
+});   
