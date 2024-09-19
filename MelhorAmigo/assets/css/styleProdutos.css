@@ -1,3 +1,9 @@
+main {
+flex:1;
+padding-bottom: 100px;
+background-color: #fff6e0;
+}
+
 .bg-custom-green {
 background-color: #16a34a;
 }
@@ -46,11 +52,6 @@ aside.show {
 right: 0;
 }
 
-main {
-flex:1;
-padding-bottom: 100px;
-background-color: #fff6e0;
-}
 
 .models {
 display:none;
@@ -200,6 +201,12 @@ right: 10px;
   box-sizing: border-box;
   transition: 0.1s;
   font-weight: 500;
+}
+
+.custom-button-produtos:hover {
+  background-color: #bef145;
+  transform: scale(1.02);
+  transition: ease-in-out;
 }
 
 .models-item--price {
