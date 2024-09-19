@@ -825,9 +825,9 @@ padding: 0px;
 @media (max-width: 480px) {
 
 .custom-banner-produtos {
-width: 100%;
-display: block;
-margin: 0px;
-padding: 0px;
-}
+  width: 100%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  }
 }
