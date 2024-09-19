@@ -1,5 +1,5 @@
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD="suasenha" # A senha do seu banco de dados.
+DB_PASSWORD="suasenha"
 DB_NAME=petshop
 PORT=3000
