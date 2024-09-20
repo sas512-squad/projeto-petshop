@@ -100,10 +100,12 @@ PORT=3000
 
 5. Configure o banco de dados MySQL:
 
-   - Crie o banco de dados utilizando o script `schema.sql` localizado na pasta `database/`:
+   - Crie o banco de dados utilizando o script `schema.sql` localizado na pasta `MelhorAmigo/database/`:
+   - Lembre-se de estar na pasta raíz da aplicação.
 
 ```bash
-mysql -u root -p < database/schema.sql
+mysql -u root -p < MelhorAmigo/database/schema.sql 
+Get-Content MelhorAmigo/database/schema.sql | mysql -u root -p
 ```
 
 6. Inicie o servidor:
