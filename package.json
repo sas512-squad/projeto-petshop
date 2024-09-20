@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node MelhorAmigo/database/server.js",
+    "dev": "nodemon  MelhorAmigo/database/server.js"
   },
   "keywords": [],
   "author": "",
