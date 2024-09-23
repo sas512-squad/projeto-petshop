@@ -1,0 +1,164 @@
+main {
+  padding-bottom: 100px;
+  background-color: #fff6e0;
+ }
+
+.bg-custom-green {
+  background-color: #16a34a;
+}
+
+.text-custom-green {
+  color: #16a34a;
+}
+
+.btn-outline-custom-green {
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+.btn-outline-custom-green:hover {
+  color: #fff;
+  background-color: #16a34a;
+}
+
+.img-card {
+  height: 20rem;
+  width: 100%;
+}
+
+.modal-img {
+  height: 60vmin;
+  width: 60vmin;
+  background-color: #fff6e0;
+  object-fit: cover; 
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body p {
+  max-width: 60vmin;
+  margin: 10px auto;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
+.img-card {
+  width: 100%;
+  height: auto;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #d5ef96;
+  border-bottom: 0px;
+}
+
+.custom-banner-galeria {
+  width: 80%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.custom-banner-div {
+  background-color: #fff6e0;
+  position: sticky;
+  top: 0;
+  transition: 1s;
+  z-index: 10;
+}
+
+.custom-btn-galeria {
+  border: 1px solid black;
+  transition: ease-in-out 0.2s;
+}
+
+.custom-btn-galeria:hover{
+  transform: scale(1.050);
+  background-color: #d5ef96;
+  transition: ease-in-out 0.5s;
+}
+
+.custom-legenda-galeria {
+  font-weight: bold;
+  margin: 0.313rem 0 0.313rem 0px;
+}
+
+.custom-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-modal-titulo-galeria {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#custom-btn-galeria {
+  margin: 0px;
+  padding: 0px;
+}
+
+#custom-modal-body {
+  padding: 1rem 1rem 0px 1rem;
+}
+
+.custom-modal-legenda {
+  margin: 0rem 1rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fff6e0;
+  border-radius: 0px 0px 20px 20px;
+  border: 2px solid #d5ef96;
+  border-top: 0px;
+  padding-top: 0.625rem;
+}
+
+/* Telas grandes (desktops e laptops maiores) */
+@media (min-width: 1200px) {
+    
+    .custom-banner-galeria {
+      width: 60%;
+      display: block;
+      margin: 0px;
+      padding: 0px;
+    }
+}
+
+/*  * 1. Telas médias (laptops e tablets maiores) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    
+    .custom-banner-galeria {
+      width: 60%;
+      display: block;
+      margin: 0px;
+      padding: 0px;
+    }
+}
+
+/*  * 2. Telas pequenas (smartphones maiores e tablets menores) */
+@media (max-width: 767px) {
+    
+  .custom-banner-galeria {
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/*  * 3. Telas muito pequenas (smartphones menores) */
+@media (max-width: 480px) {
+    
+  .custom-banner-galeria {
+      width: 100%;
+      display: block;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  

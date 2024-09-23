@@ -1,0 +1,23 @@
+{
+  "name": "projeto-petshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node MelhorAmigo/database/server.js",
+    "dev": "nodemon  MelhorAmigo/database/server.js",
+     "mysql": "docker exec -i petshop mysql -uroot -proot < MelhorAmigo/database/schema.sql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.20.0",
+    "express-handlebars": "^8.0.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.2",
+    "nodemon": "^3.1.4"
+  },
+  "description": ""
+}

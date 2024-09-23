@@ -1,353 +1,396 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html data-bs-theme="light" lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Melhor Amigo | Amor e Cuidado para cada pata. </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/img/melhoramigo.ico">
+    <title>Melhor Amigo | Amor e Cuidado para cada pata.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="/css/styleIndex.css">
+    <link rel="stylesheet" href="/css/styleProdutos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../css/styleProdutos.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1053bad4f5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 </head>
 
-<body class="bg-light font-sans">
-
-    <!-- Header -->
-    <header class="bg-green-600">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand d-flex align-items-center" href="/MelhorAmigo/pages/index.html">
-                    <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" class="mr-2" width="40" height="40">
-                    <span>Petshop</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+<body>
+    <header class="custom-header">
+        <nav class="custom-navbar navbar navbar-expand-md sticky-top d-flex py-5 z-1">
+            <div class="custom-container container">
+                <button data-bs-toggle="collapse" class="custom-toggler-navbar navbar-toggler border-0" data-bs-target="#navcol-2">
+                    <span class="visually-hidden">Toggle navigation</span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/MelhorAmigo/pages/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/MelhorAmigo/pages/produtos.html">Produtos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/MelhorAmigo/pages/galeria.html">Galeria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/MelhorAmigo/pages/contato.html">Contato</a>
-                        </li>
-                    </ul>
-                    <button class="btn btn-light ml-lg-2">Agende um Horário</button>
+                <a class="custom-brand navbar-brand d-flex align-items-center" href="/index">
+                    <img class="custom-img-navbar img-navbar" src="/img/pma-logo.webp"/>
+                </a>
+                <button class="custom-button-navbar btn menu-openner" type="button">
+                    <svg class="custom-svg-navbar bi bi-cart3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
+                        </path>
+                    </svg>
+                    <span id="span-contador"></span>
+                </button>
+                <div class="custom-input-group input-group">
+                    <input class="border rounded-pill form-control" type="text" placeholder="O que seu pet precisa?" autocomplete="on" data-bs-theme="light">
                 </div>
-            </nav>
-        </div>
+                <div class="collapse navbar-collapse custom-collapse-navbar" id="navcol-2">
+                    <ul class="custom-ul-navbar navbar-nav links-navbar">
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="/index">Início</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="/produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="/galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="/contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
+
     <!-- Main Content -->
-    <main class="pt-4">
-        <!-- Serviços -->
-        <section class="container mt-4">
-            <div class="row bg-light rounded-lg p-4 align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 font-weight-bold text-color3 mb-3">Conheça nossos serviços</h1>
-                    <p class="lead text-muted mb-4">No Petshop Melhor Amigo, oferecemos banhos relaxantes para cães e gatos, Além Proporcionamos serviços profissionais de tosa para cães de todas as raças.</p>
-                    <button class="btn btn-success btn-lg hover-bg-color1">Agendar</button>
+    <main class="flex-grow-1">
+
+        <div class="d-flex justify-content-center custom-banner-div z-1">
+            <img class="custom-banner-produtos" src="/img/img-banner-produtos.png" alt="banner da página produtos">
+        </div>
+
+        <section class="container my-5 rounded-lg p-4">
+            
+            <div class="filters">
+                <button id="filter-racao">Rações</button>
+                <button id="filter-brinquedo">Brinquedos</button>
+                <button id="filter-higiene">Higiene e Cuidados</button>
+                <button id="filter-all">Mostrar Todos</button>
+            </div>
+
+            <div class="models-area"></div>
+
+            <div class="models">
+                <div class=" models-item">
+                    <div class="models-div">
+                        <div class="models-item--img">
+                            <img src="" class="card-img-top" alt="Produto">
+                        </div>
+                        <div class="card-body d-flex flex-column custom-div-card">
+                            <div class="models-item--name">--</div>
+                            <div class="models-item--desc"></div>
+                            <div class="models-item--price">R$ </div>
+                            <div class="custom-button-interno">
+                                <button class="custom-button-produtos" id="btn-buy">+Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 d-none d-md-block">
-                    <img src="../assets/ProdutosImg/banho2.jpeg" class="img-fluid imgR" alt="">
+                <div class="cart--item">
+                    <img src=""/>
+                    <div class="cart--item-nome">--</div>
+                    <div class="cart--item--qtarea">
+                        <button class="cart--item-qtmenos">-</button>
+                        <div class="cart--item--qt">1</div>
+                        <button class="cart--item-qtmais">+</button>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!-- Banho -->
-        <section class="container my-5 bg-light rounded-lg p-4">
-            <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Hora do Banho</h2>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <img src="../assets/ProdutosImg/banho-e-tosa-04-1030x579.jpg" class="img-fluid rounded-lg shadow mb-3" alt="">
-                    <p class="text-muted">Utilizamos produtos de qualidade, seguros e adequados para cada tipo de pelagem, garantindo uma limpeza profunda e refrescante.</p>
+        
+        <div class="modelsWindowArea">
+            <div class="modelsWindowBody z-3">
+                    <div class="modelsInfo--cancelMobileButton">Voltar</div>
+                    <div class="modelsBig">
+                        <img src=""/>
+                    </div>
+                    
+                    <div class="modelsInfo">
+                        <h1>--</h1>
+                        <div class="modelsInfo--desc">--</div>
+                        <div class="modelsInfo--sizearea">
+                            <div class="modelsInfo--sector">Tamanho</div>
+                            <div class="modelsInfo--sizes">
+                                <div data-key="0" class="modelsInfo--size">Pequeno <span>--</span></div>
+                                <div data-key="1" class="modelsInfo--size">Médio <span>--</span></div>
+                                <div data-key="2" class="modelsInfo--size selected">Grande <span>--</span></div>
+                            </div>
+                        </div>
+                        <div class="modelsInfo--pricearea">
+                    <div class="modelsInfo--sector">Preço</div>
+                    <div class="modelsInfo--price">
+                        <div class="modelsInfo--actualPrice">R$ --</div>
+                        <div class="modelsInfo--qtarea">
+                            <button class="modelsInfo--qtmenos">-</button>
+                            <div class="modelsInfo--qt">1</div>
+                            <button class="modelsInfo--qtmais">+</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-5 mb-4">
-                    <img src="../assets/ProdutosImg/dogFeliz.webp" class="img-fluid rounded-lg shadow mb-3" alt="">
-                    <p class="text-muted">Nossos profissionais carinhosos proporcionam um ambiente tranquilo e seguro para que seu pet desfrute de um banho agradável, deixando-o com uma pelagem macia, brilhante e cheirosa.</p>
+                <div id="button-carrinho" class="modelsInfo--addButton">Adicionar ao carrinho</div>
+                <div class="modelsInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="container mt-4">
+        <div class="row rounded-lg p-4 align-items-center custom-div-service">
+            <div class="col-lg-6">
+                <h1 class="display-4 font-weight-bold text-color3 mb-3">Conheça nossos serviços</h1>
+                <p class="lead text-muted mb-4">No Petshop Melhor Amigo, oferecemos banhos relaxantes para cães e gatos,
+                    Além Proporcionamos serviços profissionais de tosa para cães de todas as raças.</p>
+                    <div class="custom-btn-agendar">
+                        <button class="btn btn-success btn-lg hover-bg-color1 btn-agendar">Agendar</button>
+                    </div>
+                </div>
+            <div class="col-lg-6 d-none d-md-block">
+                <img src="/img/banho2.jpeg" class="img-fluid imgR" alt="">
+            </div>
+            <div class="accordion custom-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="custom-button-flush accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <strong>Serviço de Tosa Especializada</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Proporcionamos serviços profissionais de tosa para cães de todas as raças. Nossos tosadores experientes e qualificados utilizam técnicas avançadas para garantir que seu pet tenha um visual impecável. Além de cortes de pelos personalizados, também realizamos higienização e cuidados especiais, como limpeza de ouvidos e corte de unhas, deixando seu cãozinho limpo e bem cuidado.</div>
                 </div>
             </div>
-            <div class="text-center">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="custom-button-flush accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <strong>Banho Relaxante</strong>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">No Petshop "Melhor Amigo", oferecemos banhos relaxantes para cães e gatos. Utilizamos produtos de qualidade, seguros e adequados para cada tipo de pelagem, garantindo uma limpeza profunda e refrescante. Nossos profissionais carinhosos proporcionam um ambiente tranquilo e seguro para que seu pet desfrute de um banho agradável, deixando-o com uma pelagem macia, brilhante e cheirosa.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="custom-button-flush accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <strong>Produtos de Higiene e Cuidados</strong>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Na nossa seleção de produtos, você encontrará uma gama de itens de higiene e cuidados para o seu pet. Isso inclui shampoos e condicionadores específicos para diferentes tipos de pelagem, escovas e pentes para manter os pelos desembaraçados e saudáveis, produtos de limpeza auricular e ocular, além de acessórios essenciais como coleiras, guias e comedouros. Tudo o que você precisa para manter seu animalzinho limpo, confortável e bem cuidado.</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <div id="modalAgendamento" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Agendar Serviço</h2>
+            <form id="agendamentoForm">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="servico">Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="banho">Banho</option>
+                    <option value="tosa">Tosa</option>
+                    <option value="banho_tosa">Banho e Tosa</option>
+                </select>
+                
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="horario">Horário:</label>
+                <select id="horario" name="horario" required>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                </select>
+                
+                <button type="submit" id="submitForm">Confirmar Agendamento</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="confirmacaoEmail" class="confirmacao hidden">
+        <h3>Agendamento Confirmado</h3>
+        <p>Um e-mail de confirmação foi enviado para você.</p>
+    </div>
+    
+    <section class="container my-5 rounded-lg p-4">
+        <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Hora do Banho</h2>
+        <div class="row custom-div-banho">
+            <div class="col-lg-6 mb-4">
+                <img src="/img/banho-e-tosa-04-1030x579.jpg" class="img-fluid rounded-lg mb-3 custom-img-tosa"
+                alt="">
+                <p class="text-muted">Utilizamos produtos de qualidade, seguros e adequados para cada tipo de pelagem,
+                    garantindo uma limpeza profunda e refrescante.</p>
+                </div>
+            <div class="col-lg-5 mb-4">
+                <img src="/img/dogFeliz.webp" class="img-fluid rounded-lg mb-3 custom-img-tosa" alt="">
+                <p class="text-muted">Nossos profissionais carinhosos proporcionam um ambiente tranquilo e seguro para
+                    que seu pet desfrute de um banho agradável, deixando-o com uma pelagem macia, brilhante e cheirosa.
+                </p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="/contato">
                 <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
+            </a>
+        </div>
+    </section>
+    
+    <section class="container my-5 rounded-lg p-4 custom-div-service">
+        <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Ficou um gato, Beethoven!</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <img src="/img/Post_banho_e_tosa.jpg" class="img-fluid rounded-lg custom-img-tosa" alt="imagem de um cachorro preto, com detalhes marrom e branco e uma tesoura">
             </div>
-        </section>
-
-        <!-- Tosa -->
-        <section class="container my-5 bg-light rounded-lg p-4">
-            <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Ficou um gato Beethoven!</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4">
-                    <img src="../assets/ProdutosImg/Post_banho_e_tosa.jpg" class="img-fluid rounded-lg shadow" alt="">
-                </div>
-                <div class="col-lg-6">
-                    <p class="lead text-muted mb-4">Nossos tosadores experientes e qualificados utilizam técnicas avançadas para garantir que seu pet tenha um visual impecável. Além de cortes de pelos personalizados, também realizamos higienização e cuidados especiais, como limpeza de ouvidos e corte de unhas, deixando seu cãozinho limpo e bem cuidado.</p>
-                    <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Rações e outros produtos -->
-        <section class="container my-5 bg-light rounded-lg p-4 bg-color3">
-            <h2 class="display-4 text-center font-weight-bold text-color3 mb-4">Rações</h2>
-            <div class="row">
-                <!-- Produto 1 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <h3 class="card-header text-center">Ração GoldeN</h3>
-                        <img src="../assets/ProdutosImg/RSpecialDog.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">Ração Special Dog Premium Carne Plus para Cães Adultos</p>
-                            <p class="card-text font-weight-bold">R$ 13,90</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 2 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <h3 class="card-header text-center">  Ração Farmina N&D Ancestral Grain</h3>
-                        <img src="../assets/ProdutosImg/RaçãoFormina.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">Ração Farmina N&D Ancestral Grain para Cães Adultos de Raças Grandes Sabor Cordeiro e Blueberry - 10,1kg</p>
-                            <p class="card-text font-weight-bold">R$ 422,99</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 3 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <h3 class="card-header text-center">Ração Guabi
-                            Natural Grain Free</h3>
-                        <img src="../assets/ProdutosImg/RGuabiNatural.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">  Ração Guabi Natural Grain Free para Gatos Adultos Castrados
-                                Sabor Salmão e Lentilha</p>
-                            <p class="card-text font-weight-bold">R$ 109,90</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 4 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <h3 class="card-header text-center">Ração FreshMeat</h3>
-                        <img src="../assets/ProdutosImg/RFreshMeat.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1"> Ração Fórmula Natural FreshMeat para Gatos Adultos Castrados
-                                Sabor Salmão</p>
-                            <p class="card-text font-weight-bold">R$ 72,45</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 5 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <h3 class="card-header text-center">Ração N&D
-                            Grain Free</h3>
-                        <img src="../assets/ProdutosImg/RN&DGrainFree.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1"> Ração N&D Grain Free para Cães Filhotes de Raças Grandes sabor
-                                Frango e Romã 10,1kg</p>
-                            <p class="card-text font-weight-bold">R$ 470,90</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-right">
-                <button class="btn btn-outline-success rounded-pill">
-                    Mais <i class="fa-solid fa-arrow-right fa-fade fa-sm"></i>
-                </button>
-            </div>
-        </section>
-
-        <!-- Brinquedos -->
-        <section class="container my-5 bg-light rounded-lg p-4">
-            <h2 class="display-4 text-center font-weight-bold text-color3 mb-4"> Brinquedos Interativos</h2>
-            <div class="row">
-                <!-- Produto 1 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">Brinquedo Macaco Petz</h3> -->
-                        <img src="../assets/images/img-produto04.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">Brinquedo Macaco Petz</p>
-                            <p class="card-text font-weight-bold ">R$ 13,90</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 2 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">Brinquedo Líder Pet Bola Cravo para Cães - Cores Sortidas</h3> -->
-                        <img src="../assets/ProdutosImg/Brinquedo1.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">Brinquedo Líder Pet Bola Cravo para Cães - Cores Sortidas</p>
-                            <p class="card-text font-weight-bold">R$ 422,99</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 3 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">Ração Guabi
-                            Natural Grain Free</h3> -->
-                        <img src="../assets/ProdutosImg/Brinquedo2.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">Brinquedo e Comedouro Pet Games Labirinto Verde Água para Cães e Gatos</p>
-                            <p class="card-text font-weight-bold">R$ 109,90</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 4 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">Ração FreshMeat</h3> -->
-                        <img src="../assets/ProdutosImg/Brinquedo3.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">  Brinquedo Capivara de Pelúcia Petz para Cães</p>
-                            <p class="card-text font-weight-bold">R$ 72,45</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 5 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">Ração N&D
-                            Grain Free</h3> -->
-                        <img src="../assets/ProdutosImg/Brinquedo5.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">  Brinquedo Piranha de Pelúcia Petz para Cães</p>
-                            <p class="card-text font-weight-bold">R$ 470,90</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-right">
-                <button class="btn btn-outline-success rounded-pill">
-                    Mais <i class="fa-solid fa-arrow-right fa-fade fa-sm"></i>
-                </button>
-            </div>
-        </section>
-
-        <!-- produtos higiene -->
-        <section class="container my-5 bg-light rounded-lg p-4">
-            <h2 class="display-4 text-center font-weight-bold text-color3 mb-4"> Produtos de Higiene e Cuidados</h2>
-            <div class="row">
-                <!-- Produto 1 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">Ração GoldeN</h3> -->
-                        <img src="../assets/ProdutosImg/Produto1jpg.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">Eliminador de Odores Lavanda UP Clean - p/ Cães e Gatos</p>
-                            <p class="card-text font-weight-bold">R$ 13,90</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 2 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">  Ração Farmina N&D Ancestral Grain</h3> -->
-                        <img src="../assets/ProdutosImg/Produto2.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">Hidratante de Patas e Focinho - p/ Cães</p>
-                            <p class="card-text font-weight-bold">R$ 422,99</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 3 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">Ração Guabi
-                            Natural Grain Free</h3> -->
-                        <img src="../assets/ProdutosImg/Produto3.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">  Dug's Coleira Antiparasitario</p>
-                            <p class="card-text font-weight-bold">R$ 109,90</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 4 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">Ração FreshMeat</h3> -->
-                        <img src="../assets/ProdutosImg/Produto4.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">   Hectotrio spot gg cães (acima de 24 KG)</p>
-                            <p class="card-text font-weight-bold">R$ 72,45</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produto 5 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <h3 class="card-header text-center">Ração N&D
-                            Grain Free</h3> -->
-                        <img src="../assets/ProdutosImg/Produto5.jpg" class="card-img-top" alt="Produto">
-                        <div class="card-body d-flex flex-column">
-                            <p class="card-text flex-grow-1">  Hectotrio spot fp gato (1 a 4KG)</p>
-                            <p class="card-text font-weight-bold">R$ 470,90</p>
-                            <button class="btn btn-success hover-bg-color1 mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-right">
-                <button class="btn btn-outline-success rounded-pill">
-                    Mais <i class="fa-solid fa-arrow-right fa-fade fa-sm"></i>
-                </button>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-green-600 text-white py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <a href="#" class="text-white text-decoration-none d-flex align-items-center">
-                        <img src="./../assets/images/pma-logo.png" alt="Logo Petshop" width="40" height="40" class="mr-2">
-                        <span class="h5 mb-0">Petshop</span>
+            <div class="col-lg-6 text-center">
+                <p class="lead text-muted mb-4">Nossos tosadores experientes e qualificados utilizam técnicas avançadas
+                    para garantir que seu pet tenha um visual impecável. Além de cortes de pelos personalizados, também
+                    realizamos higienização e cuidados especiais, como limpeza de ouvidos e corte de unhas, deixando seu
+                    cãozinho limpo e bem cuidado.</p>
+                    <a href="/contato">
+                        <button class="btn btn-success btn-lg hover-bg-color2">Saiba mais</button>
                     </a>
                 </div>
-                <div class="col-md-4 text-center mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2024 Petshop - <a href="#" class="text-white">@username</a></p>
+            </div>
+    </section>
+    
+</main>
+
+<aside class="custom-aside">
+    <div class="cart--area">
+        <div class="menu-closer">
+            <span class="material-icons">x</span>
+        </div>
+        <h1>Seus Produtos</h1>
+        <div class="cart"></div>
+        <div class="cart--details">
+            <div class="cart--totalitem subtotal">
+                <span>Subtotal</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem desconto">
+                <span id="desc-10">Desconto</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem total big">
+                <span>Total</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cupom">
+                <input class="custom-input-cupom" type="text" id="cupom-input" placeholder="Digite seu cupom">
+                <button id="btn-aplicar-cupom" class="custom-btn-cupom">Aplicar Cupom</button>
+            </div>
+            <div id="btn-finalizar-compra" class="cart--finalizar">Finalizar a compra</div>
+        </div>
+    </div>
+</aside>
+    <footer>
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Institucional</h3>
+                    <ul class="list-unstyled">
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                href="#">Sobre o Melhor Amigo</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                href="#">Trabalhe Conosco</a></li>
+                                <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                    href="#">Canal de Denúncias</a></li>
+                                </ul>
                 </div>
-                <div class="col-md-4 text-md-right">
-                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Aqui Você Encontra</h3>
+                    <ul class="list-unstyled">
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                            href="#">Como Comprar</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                            href="#">Clube Melhor Amigo</a></li>
+                            <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                href="#">Nossos Diferenciais</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                            <h3 class="fs-6">Nossas Políticas</h3>
+                    <ul class="list-unstyled">
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                            href="#">Entrega e Frete</a></li>
+                            <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                href="#">Pagamento e Reembolso</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                href="#">Política de Privacidade</a></li>
+                    </ul>
                 </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Ajuda</h3>
+                    <ul class="list-unstyled">
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                href="#">Atendimento</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                href="#">Meus Pedidos</a></li>
+                        <li class="custom-link-text-footer"><a class="link-secondary custom-text-link-footer"
+                                href="#">Ouvidoria</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div
+                class="fw-bold d-inline-flex flex-column justify-content-center align-items-center align-items-lg-start pt-3">
+                <p class="text-muted mb-0">Redes Sociais</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                viewBox="0 0 16 16" class="bi bi-facebook">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                                </path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                viewBox="0 0 16 16" class="bi bi-instagram">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                </path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                viewBox="0 0 16 16" class="bi bi-linkedin">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4">
+                                </path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                viewBox="0 0 16 16" class="bi bi-youtube">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z">
+                                </path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a class="custom-text-link-footer link-secondary" href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                viewBox="0 0 16 16" class="bi bi-tiktok">
+                                <path
+                                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z">
+                                </path>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center justify-content-lg-center pt-3">
+                <p
+                    class="text-center d-lg-flex justify-content-lg-center align-items-lg-center mb-0 custom-font-footer">
+                    Petshop Melhor Amigo - CNPJ 51.267.118/0006-42 - Endereço: Rua João José Rescala, 326 - Imbuí -
+                    Salvador - BA - CEP: 41720-000</p>
+                <p
+                    class="text-center d-lg-flex justify-content-lg-center align-items-lg-center mb-0 custom-font-footer">
+                    Copyright © Petshop Melhor Amigo Comércio e Participações S/A - Todos os direitos reservados</p>
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script type="text/javascript" src="/javascript/scriptBDSimulado.js"></script>
+    <script type="text/javascript" src="/javascript/scriptProdutos.js"></script>
 </body>
-
 </html>

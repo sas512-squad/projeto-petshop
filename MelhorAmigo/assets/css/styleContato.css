@@ -1,0 +1,110 @@
+main {
+  padding-bottom: 100px;
+  background-color: #fff6e0;
+ }
+
+.bg-custom-green {
+    background-color: #16a34a;
+}
+
+.text-custom-green {
+    color: #16a34a;
+}
+
+.border-custom-green {
+    border-color: #16a34a;
+}
+
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.custom-button-interno {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-button-contato {
+  margin: 0;
+  padding: 0.625rem;
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: 1rem;
+  background-color: #d5ef96;
+  border-radius: 1rem;
+  color: black;
+  text-transform: none;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+.custom-button-contato:hover {
+  background-color: #bef145;
+  transform: scale(1.02);
+  transition: ease-in-out;
+}
+
+.custom-contato {
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: #d5ef96;
+  box-shadow: 0px 0px 100px #999;
+}
+
+.custom-map-div {
+  padding: 10px;
+}
+
+.custom-map {
+  border: 10px solid #d5ef96;
+  height: 500px;
+  width: 100%;
+}
+
+/* * 0. Telas grandes (desktops e laptops maiores) */
+@media (min-width: 1200px) {
+    
+    .custom-banner-contato {
+      width: 60%;
+      display: block;
+      margin: 0px;
+      padding: 0px;
+    }
+}
+
+/*  * 1. Telas médias (laptops e tablets maiores) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    
+    .custom-banner-contato {
+      width: 60%;
+      display: block;
+      margin: 0px;
+      padding: 0px;
+    }
+}
+
+/*  * 2. Telas pequenas (smartphones maiores e tablets menores) */
+@media (max-width: 767px) {
+    
+  .custom-banner-contato {
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/*  * 3. Telas muito pequenas (smartphones menores) */
+@media (max-width: 480px) {
+    
+  .custom-banner-contato {
+      width: 100%;
+      display: block;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  
